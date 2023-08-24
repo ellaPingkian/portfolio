@@ -9,8 +9,6 @@ import { PiSketchLogo } from 'react-icons/Pi'
 import { useNavigate } from 'react-router-dom'
 
 
-
-
 function Homepage() {
 
   const navigate = useNavigate();
