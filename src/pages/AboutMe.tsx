@@ -1,8 +1,8 @@
-import Logo from '../assets/images/logoBlack.png'
-import Hero from '../components/global/Hero';
+// import Logo from '../assets/images/logoBlack.png'
+// import Hero from '../components/global/Hero';
 import Footer from '../components/global/Footer';
-import Navbar from '../components/global/Navbar';
-import Background from '../components/global/Background';
+// import Navbar from '../components/global/Navbar';
+// import Background from '../components/global/Background';
 import { BsArrowUp } from 'react-icons/Bs'
 
 

@@ -54,8 +54,8 @@ function Navbar() {
             const [selectedIndex, setSelectedIndex] = React.useState(0);
 
             return (
-              <li key={index} onClick={() => {setSelectedIndex(index)}}
-              className={` ${ isActive && 'text-accent font-semibold'} px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300`}>
+              <li key={index} onClick={() => {setSelectedIndex(selectedIndex)}}
+              className={` ${ isActive && 'text-accent'} px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300`}>
                   {/* 'px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300'   */}
                 <Link to={item.path} className='w-full h-full flex items-center'>
                   <span>{item.title}</span>

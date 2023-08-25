@@ -2,7 +2,7 @@ import * as Icons from 'iconsax-react'
 import React from 'react'
 import { Link , useMatch, useResolvedPath } from 'react-router-dom'
 
-function MobileNav({visible, onClose}) {
+function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
   if (!visible) return null;
 
   const handleOnCLose = () => {
@@ -44,7 +44,7 @@ function MobileNav({visible, onClose}) {
               const [selectedIndex, setSelectedIndex] = React.useState(0);
 
               return (
-                <li key={index} onClick={() => {setSelectedIndex(index)}}
+                <li key={index} onClick={() => {setSelectedIndex(selectedIndex)}}
                 className={` ${ isActive && 'text-accent font-semibold'} flex items-center h-11`}>
                     {/* 'px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300'   */}
                   <Link to={item.path} className='w-full h-full flex items-center' onClick={onClose}>

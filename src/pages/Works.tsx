@@ -1,10 +1,10 @@
-import { Back } from 'iconsax-react'
-import React from 'react'
-import Background from '../components/global/Background'
+// import { Back } from 'iconsax-react'
+// import React from 'react'
+// import Background from '../components/global/Background'
 import Footer from "../components/global/Footer"
 import { BsArrowDown } from "react-icons/Bs"
-import Logo from '../assets/images/logoBlack.png'
-import CautionPage from './CautionPage'
+// import Logo from '../assets/images/logoBlack.png'
+// import CautionPage from './CautionPage'
 
 function Works() {
   return (

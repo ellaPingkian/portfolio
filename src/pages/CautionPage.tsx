@@ -1,7 +1,7 @@
-import Navbar from '../components/global/Navbar'
+// import Navbar from '../components/global/Navbar'
 import Logo from '../assets/images/logoBlack.png'
 import * as Icons from 'iconsax-react'
-import Background from '../components/global/Background'
+// import Background from '../components/global/Background'
 
 
 function CautionPage() {

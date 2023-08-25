@@ -1,6 +1,6 @@
-import Background from "../components/global/Background"
-import Logo from '../assets/images/logoBlack.png'
-import Hero from "../components/global/Hero"
+// import Background from "../components/global/Background"
+// import Logo from '../assets/images/logoBlack.png'
+// import Hero from "../components/global/Hero"
 import Footer from "../components/global/Footer"
 import { BsArrowDown } from "react-icons/Bs"
 
