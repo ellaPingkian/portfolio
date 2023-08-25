@@ -3,6 +3,7 @@ import Footer from '../../components/global/Footer'
 import Nomo from './../../assets/images/nomo/nomo-mockup.png'
 import UserPersona from './../../assets/images/nomo/user-persona.png'
 import UserFlow from './../../assets/images/nomo/userflow.png'
+import StyleGuide from './../../assets/images/nomo/style-guide.png'
 import LofiVer1 from './../../assets/images/nomo/lofi-wireframe-1.png'
 import LofiVer2 from './../../assets/images/nomo/lofi-wirefrme-2.png'
 import LofiVer3 from './../../assets/images/nomo/lofi-wirefrme-3.png'
@@ -239,11 +240,20 @@ function NomoSpaceProject() {
         <hr className='border-[#24303C] opacity-40 mt-6'/>
 
         {/* style guide */}
+        <div className='flex flex-col gap-12 py-16'>
+          <div className='flex flex-col gap-4'>
+            <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Style Guide</span>
+            <span className='text-[#393939] text-lg tracking-[0.03em]'>Primarily, this style guide was created by John and later on collaborated with other designers inside the company in finding the right color combination for the brand. </span>
+          </div>
+          <div className='flex justify-center px-10 w-full h-auto rounded-lg shadow-2xl'>
+            <img src={StyleGuide} alt='style guide' className='h-auto w-[80%]'/>
+          </div>
+        </div>
 
 
         {/* early ideation */}
-        <div className='flex flex-col gap-8 py-16'>
-          <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-12 py-16'>
+          <div className='flex flex-col gap-4'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Early Ideation</span>
             <span className='text-[#393939] text-lg tracking-[0.03em]'>
               Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.
