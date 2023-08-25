@@ -3,7 +3,8 @@
 // import Background from '../components/global/Background'
 import Background from "../components/global/Background"
 import Footer from "../components/global/Footer"
-import { BsArrowDown } from "react-icons/Bs"
+import * as Icons from "iconsax-react"
+// import { BsArrowDown } from "react-icons/Bs"
 // import Logo from '../assets/images/logoBlack.png'
 // import CautionPage from './CautionPage'
 
@@ -28,7 +29,7 @@ function Works() {
           <div className="flex flex-row gap-8 px-32 py-8 items-end text-[#C2C2C2]">
             <div className="w-[20%]">
               <div className='h-[110px] w-[110px] rounded-full bg-transparent border-2 border-dashed border-gray-700 flex items-center justify-center'>
-                <BsArrowDown className='w-14 h-auto' />
+                <Icons.ArrowDown className='w-14 h-auto' />
               </div>
             </div>
 

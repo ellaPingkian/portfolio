@@ -1,9 +1,10 @@
 import Logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
-import { BsBehance, BsArrowUpRight } from 'react-icons/Bs'
-import { FaLinkedinIn } from 'react-icons/Fa'
-import { PiGithubLogoFill } from 'react-icons/Pi'
-import { AiFillInstagram } from 'react-icons/Ai'
+import * as Icons from 'iconsax-react'
+// import { BsBehance, BsArrowUpRight } from 'react-icons/Bs'
+// import { FaLinkedinIn } from 'react-icons/Fa'
+// import { PiGithubLogoFill } from 'react-icons/Pi'
+// import { AiFillInstagram } from 'react-icons/Ai'
 
 
 function Footer() {
@@ -11,22 +12,22 @@ function Footer() {
   let socials = [
     {
       name: 'behance',
-      icon: <BsBehance className = 'w-[25px] h-auto text-white'/>,
+      icon: <Icons.Heart className = 'w-[25px] h-auto text-white' />,
       path: 'https://www.behance.net/ellapingkian'
     },
     {
       name: 'linkedin',
-      icon: <FaLinkedinIn className = 'w-[25px] h-auto text-white'/>,
+      icon: <Icons.Heart className = 'w-[25px] h-auto text-white' />,
       path: 'https://www.linkedin.com/in/ella-pingkian/'
     },
     {
       name: 'github',
-      icon: <PiGithubLogoFill className = 'w-[25px] h-auto text-white'/>,
+      icon: <Icons.Heart className = 'w-[25px] h-auto text-white' />,
       path: 'https://github.com/ellaPingkian'
     },
     {
       name: 'instagram',
-      icon: <AiFillInstagram className = 'w-[30px] h-auto text-white' />,
+      icon: <Icons.Heart className = 'w-[25px] h-auto text-white' />,
       path: 'https://www.instagram.com/_ellamarrie/'
     }
   ]
@@ -60,7 +61,7 @@ function Footer() {
           </div>
 
           <div className='h-[110px] w-[110px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
-            <BsArrowUpRight className='w-14 h-auto' />
+            <Icons.ArrowRight className='w-16 h-auto -rotate-45' />
           </div>
         </Link>
       </div>

@@ -5,7 +5,7 @@ import Nomo from '../assets/images/thumbnail/nomoThumbnail.png'
 import Footer from '../components/global/Footer'
 // import Hero from '../components/global/Hero'
 // import { BsArrowUp } from 'react-icons/Bs'
-import { PiSketchLogo } from 'react-icons/Pi'
+// import { PiSketchLogo } from 'react-icons/Pi'
 import { useNavigate } from 'react-router-dom'
 import Background from '../components/global/Background';
 
@@ -53,7 +53,7 @@ function Homepage() {
               <Icons.Xd className='text-accent w-12 h-auto'/>
               <Icons.Photoshop className='text-accent w-12 h-auto'/>
               <Icons.Illustrator className='text-accent w-12 h-auto'/>
-              <PiSketchLogo className='text-accent w-12 h-auto' />
+              {/* <PiSketchLogo className='text-accent w-12 h-auto' /> */}
             </div>
 
             <hr className='border-accent opacity-40'></hr>
@@ -122,7 +122,7 @@ function Homepage() {
 
       </div>
       {/* FOOTER */}
-      <div className='w-sceen pt-8'>
+      <div className='z-10 w-sceen pt-8'>
         <Footer />
       </div>   
 
