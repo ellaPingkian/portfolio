@@ -1,5 +1,6 @@
 // import React from 'react'
-import { BsArrowUp } from 'react-icons/Bs'
+// import { BsArrowUp } from 'react-icons/Bs'
+import * as Icons from 'iconsax-react'
 
 function Hero() {
   return (
@@ -29,7 +30,7 @@ function Hero() {
           <span className='text-[#C2C2C2] font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
           about <span className='text-accent'>Ella</span></span>
           <div className='h-[110px] w-[110px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
-            <BsArrowUp className='text-[#C2C2C2] w-14 h-auto rotate-180' />
+            <Icons.ArrowDown className='text-[#C2C2C2] w-14 h-auto' />
           </div>
         </div>
       </div>
