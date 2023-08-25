@@ -6,7 +6,6 @@ import AboutMe from './pages/AboutMe';
 import CautionPage from './pages/CautionPage';
 import Navbar from './components/global/Navbar';
 import NomoSpaceProject from './pages/projects/NomoSpaceProject';
-// import Sample from './pages/Sample';
 
 function App() {
 

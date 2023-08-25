@@ -6,12 +6,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./types"
-    ],
-    "types": [],
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

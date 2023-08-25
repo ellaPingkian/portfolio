@@ -7,6 +7,7 @@ import Footer from '../components/global/Footer'
 // import { BsArrowUp } from 'react-icons/Bs'
 import { PiSketchLogo } from 'react-icons/Pi'
 import { useNavigate } from 'react-router-dom'
+import Background from '../components/global/Background';
 
 
 function Homepage() {
@@ -15,9 +16,9 @@ function Homepage() {
 
   return (
     <div className='flex flex-col w-screen h-auto'>
+      <Background />
       
-      <div className='lg:px-48 xl:px-48 2xl:px-48 w-screen px-10'>
-        {/* <Background /> */}
+      <div className='z-10 lg:px-48 xl:px-48 2xl:px-48 w-screen px-10'>
 
         {/* HERO */}
         <div className='w-full'>
