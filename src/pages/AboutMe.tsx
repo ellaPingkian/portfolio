@@ -63,8 +63,18 @@ function AboutMe() {
                 <span className='text-[#A3A3A3] tracking-[0.07em] text-sm font-secondary pb-2'>My Bio</span>
                 <span className='font-main text-5xl text-accent'>A little something <br/> about me</span>
               </div>
-              <div className='w-[50%] pt-7'>
-                <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
+              <div className='w-[50%] pt-7 gap-8 flex flex-col'>
+                <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md'>Hello, I'm Ella Pingkian, a passionate aspiring UI/UX Designer dedicated to crafting seamless and delightful user experiences. With a foundation in research and a keen creative eye, my work is grounded in understanding the unique needs and desires of users. I believe that great design goes beyond aesthetics, it's about creating meaningful connections between people and technology.
+                <br/><br/>
+                My process involves diving deep into user insights to inform every decision, ensuring that the solutions I design are intuitive, impactful, and user-centered.
+                <br/><br/>
+                I'm excited to continue my journey of transforming ideas into purposeful designs that enrich the lives of users.</span>
+                
+                <div className='flex gap-4'>
+                  <Icons.Heart className='text-accent w-6 h-auto' variant="Bold"/>
+                  <span className='text-accent tracking-[0.10em] font-main italic font-normal text-lg'>ella</span>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -92,7 +102,9 @@ function AboutMe() {
                   <div className='w-[80%] flex flex-col gap-4'>
                     <span className='flex text-[#404E56] tracking-[0.10em] text-xl font-secondary'>Brite Studio</span>
                     <span className='flex text-accent tracking-[0.10em] text-4xl font-bold font-secondary'>UI/UX Intern</span>
-                    <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
+                    <span className='text-[#e6e6e6] tracking-[0.10em] font-secondary font-light text-md'>I orchestrated a symphony of design, collaboration, and innovation. Partnering closely with the marketing team, I delved into comprehensive market research, unraveling insights that formed the foundation of our design strategy. Seamlessly integrating my creative vision with user-centric principles, I crafted intuitive digital experiences that mirrored the brand's essence and captivated coffee enthusiasts.
+                    <br/><br/>
+                    I fostered a dynamic partnership with the development team, translating intricate designs into functional realities.</span>
                   </div>
                 </div>
                 
@@ -102,7 +114,9 @@ function AboutMe() {
                   <div className='w-[80%] flex flex-col gap-4'>
                     <span className='flex text-[#404E56] tracking-[0.10em] text-xl font-secondary'>DS Web Solutions and Consultancy INC.</span>
                     <span className='flex text-accent tracking-[0.10em] text-4xl font-bold font-secondary'>Quality Assurance for Mobile Applications</span>
-                    <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
+                    <span className='text-[#e6e6e6] tracking-[0.10em] font-secondary font-light text-md'>I collaborated closely with company’s software engineer to ensure the seamless functionality and user satisfaction of our products. Positioned directly under the software engineer's wing, I played a pivotal role in the development process by meticulously testing and assessing the mobile application's performance, usability, and overall quality.
+                    <br/><br/>
+                    My role involved not only identifying and reporting bugs and issues but also working in tandem with the software engineer to address them effectively. Through rigorous testing and feedback loops, I contributed to enhancing the user experience and refining the application's features.</span>
                   </div>
                 </div>
 
@@ -112,7 +126,7 @@ function AboutMe() {
                   <div className='w-[80%] flex flex-col gap-4'>
                     <span className='flex text-[#404E56] tracking-[0.10em] text-xl font-secondary'>Tome Publishing and Media LLC</span>
                     <span className='flex text-accent tracking-[0.10em] text-4xl font-bold font-secondary'>Graphic Designer / Illustrator</span>
-                    <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
+                    <span className='text-[#e6e6e6] tracking-[0.10em] font-secondary font-light text-md'>Collaborating closely with authors, editors, and the creative team, I translated narrative themes into visual narratives. Through meticulous attention to detail, I crafted book covers that not only resonated with readers but also stood out on digital and physical shelves. By intertwining my passion for illustration with a deep understanding of storytelling, I contributed to reimagining the way readers connected with the written word.</span>
                   </div>
                 </div>
               </div>
@@ -127,7 +141,7 @@ function AboutMe() {
               </div>
 
               <div className='w-[50%] flex flex-col'>
-                <ul className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-md list-disc leading-8'>
+                <ul className='text-[#e6e6e6] tracking-[0.10em] font-secondary text-md font-light list-disc leading-8'>
                   <li>User Interface Design</li>
                   <li>User Experience Design</li>
                   <li>Frontend Developement</li>

@@ -4,7 +4,7 @@ import * as Icons from 'iconsax-react'
 // import { BsBehance, BsArrowUpRight } from 'react-icons/Bs'
 // import { FaLinkedinIn } from 'react-icons/Fa'
 // import { PiGithubLogoFill } from 'react-icons/Pi'
-// import { AiFillInstagram } from 'react-icons/Ai'
+import { AiFillInstagram } from 'react-icons/Ai'
 
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
     },
     {
       name: 'instagram',
-      icon: <Icons.Heart className = 'w-[25px] h-auto text-white' />,
+      icon: <AiFillInstagram className = 'w-[25px] h-auto text-white' />,
       path: 'https://www.instagram.com/_ellamarrie/'
     }
   ]

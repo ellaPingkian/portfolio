@@ -21,14 +21,21 @@ function Homepage() {
       <div className='z-10 lg:px-48 xl:px-48 2xl:px-48 w-screen px-10'>
 
         {/* HERO */}
-        <div className='w-full'>
-          <div className='py-8 antialiased flex flex-col items-center text-9xl sm:text-8xl xs:text-7xl font-main text-accent leading-[75%] gap-4 sm:gap-0 xs:gap-0'>
+        <div className='w-full h-[85vh] flex flex-row '>
+          <div className='w-[70%] py-8 antialiased flex flex-col text-9xl sm:text-8xl xs:text-7xl font-main text-accent leading-[75%] gap-4 sm:gap-0 xs:gap-0'>
             <span>Research.</span>
             <span className='italic'>Design.</span>
             <span>Experience.</span>
             <span className='italic'>Deliver.</span>
+          </div>
 
-          </div>          
+          <div className='flex flex-row gap-8 w-[30%] items-end justify-end'>
+              <span className='text-[#C2C2C2] font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
+              about <span className='text-accent'>Ella</span></span>
+              <div className='h-[110px] w-[110px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
+                <Icons.ArrowDown className='text-[#C2C2C2] w-14 h-auto' />
+              </div>
+            </div>          
         </div>
 
         {/* SKILLS */}
