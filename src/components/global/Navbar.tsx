@@ -43,7 +43,7 @@ function Navbar() {
     <div className='h-20 w-screen bg-transparent bg-opacity-20 flex flex-row gap-8 px-48 sm:px-10 xs:px-10 md:px-10 lg:px-10'>
 
       <div className='w-[20%] items-center flex'>
-        <img src={Logo} alt='logo' className='h-[25px] w-auto'/>
+        <img src={Logo} alt='logo' className='h-auto w-[40px] xs:w-full'/>
       </div>
 
       <div className='w-[60%] flex items-center justify-end md:hidden sm:hidden xs:hidden ' >

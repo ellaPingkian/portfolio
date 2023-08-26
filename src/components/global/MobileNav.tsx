@@ -28,7 +28,7 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
   ]
 
   return (
-    <div className='fixed z-10 inset-0 bg-bg bg-opacity-60 backdrop-blur-2xl pt-6'>
+    <div className='fixed z-20 inset-0 bg-bg bg-opacity-40 backdrop-blur-2xl pt-6'>
 
       <div className='flex flex-col pt-4 px-10 gap-10'>
 
