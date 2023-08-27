@@ -23,39 +23,38 @@ function NomoSpaceProject() {
     <div className='flex flex-col w-screen bg-[#e2d7d7] h-auto'>
       <ScrollOnTop />
       {/* bg-[#e2d7d7] */}
-      <div className="w-screen px-24 h-auto">
-        {/* lg:px-48 xl:px-48 2xl:px-48 */}
+      <div className="w-screen px-24 h-auto phone:px-5 tablet:px-10">
 
         {/* HERO */}
-        <div className='flex flex-row h-[80vh] pt-12 text-[#24303C]'>
-          <div className='flex flex-col justify-between w-[35%]'>
+        <div className='flex flex-row tablet:flex-col phone:flex-col h-[80vh] tablet:h-auto phone:h-auto pt-12 text-[#24303C] tablet:gap-12 phone:gap-12'>
+          <div className='flex flex-col justify-between w-[35%] tablet:w-full phone:w-full tablet:text-center phone:text-center'>
             <div className='flex flex-col justify-between gap-3'>
-              <span className='font-secondary text-9xl font-extrabold'>NOMO SPACE</span>
-              <span className='font-secondary text-3xl'>A Coffee Space Brand</span>
+              <span className='font-secondary text-9xl font-extrabold tablet:text-8xl phone:text-7xl'>NOMO SPACE</span>
+              <span className='font-secondary text-3xl tablet:text-2xl'>A Coffee Space Brand</span>
             </div>
-            <span className='font-secondary text-xl'>UI/UX Case Study</span>
+            <span className='font-secondary text-xl tablet:text-base tablet:pt-20 phone:text-sm phone:pt-20'>UI/UX Case Study</span>
           </div>
 
-          <div className='flex items-center w-[65%]'>
-            <img src={Nomo} alt='nomo thumbnail' className='h-[500px] w-auto rotate-3 md:h-[300px] sm:h-[300px] xs:h-[300px]'/>
+          <div className='flex items-center w-[65%] tablet:w-full phone:w-full tablet:justify-center phone:justify-center'>
+            <img src={Nomo} alt='nomo thumbnail' className='h-[500px] w-auto rotate-3 tablet:h-[300px] phone:h-[250px]'/>
           </div>
         </div>
 
         {/* Title ad overview */}
-        <div className='flex flex-col pt-48 gap-4'>
+        <div className='flex flex-col pt-48 gap-4 phone:pt-24'>
           {/* title */}
-          <div className='flex flex-col gap-2 px-32'>
-            <span className='font-secondary text-2xl text-[#747474] tracking-[0.07em]'>Crafting the Perfect Blend:</span>
-            <span className='font-secondary font-extrabold text-6xl text-[#24303C] tracking-[0.03em]'>Revitalizing the Coffee Space Brand with a Custom Web Design Solution</span>
+          <div className='flex flex-col gap-2 px-32 tablet:px-0 phone:px-0'>
+            <span className='font-secondary text-2xl text-[#747474] tracking-[0.07em] phone:text-sm '>Crafting the Perfect Blend:</span>
+            <span className='font-secondary font-extrabold text-6xl phone:text-4xl text-[#24303C] tracking-[0.03em] phone:tracking-[0em]'>Revitalizing the Coffee Space Brand with a Custom Web Design Solution</span>
           </div>
 
           {/* overview */}
           <div className='flex flex-col pt-16'>
-            <span className='font-secondary text-sm text-[#747474] tracking-[0.07em] px-32'>OVERVIEW</span>
+            <span className='font-secondary text-sm text-[#747474] tracking-[0.07em] px-32 tablet:px-0 phone:px-0'>OVERVIEW</span>
 
             <hr className='border-[#24303C] mt-6'/>
 
-            <div className='flex flex-row gap-2 align-middle justify-between py-8 px-32'>
+            <div className='flex flex-row phone:flex-col gap-2 align-middle justify-between py-8 px-32 tablet:px-0 phone:px-10 phone:gap-6'>
               <div className='flex flex-col gap-1'>
                 <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>TIMELINE</span>
                 <span className='font-secondary font-semibold text-[#24303C] tracking-[0.05em]'>Feb - May 2023</span>
@@ -80,8 +79,8 @@ function NomoSpaceProject() {
         </div>
 
         {/* description & problem statement */}
-        <div className='flex flex-row py-24 gap-14'>
-          <div className='flex flex-col gap-4 w-[50%]'>
+        <div className='flex flex-row tablet:flex-col phone:flex-col py-24 gap-14'>
+          <div className='flex flex-col gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>A little something about the brand...</span>
             <span className='text-[#393939] text-lg tracking-[0.03em]'>
               Nomo Space is a coffee space brand which promotes a safe, friendly, and comfortable workspace for young professionals, freelancers, and students alike while also offering a variety of drinks and snacks including coffees, teas, and desserts.
@@ -89,7 +88,7 @@ function NomoSpaceProject() {
           </div>
 
           {/* problem */}
-          <div className='flex-col flex gap-4 w-[50%]'>
+          <div className='flex-col flex gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Problem Statement</span>
             <span className='text-[#393939] text-2xl font-semibold italic'>The absence of an online presence.</span>
             <span className='text-[#393939] text-lg tracking-[0.03em]'>
@@ -103,10 +102,10 @@ function NomoSpaceProject() {
         <hr className='border-[#24303C] opacity-40 mt-6'/>
 
         {/* role &goal */}
-        <div className='flex flex-row py-24 gap-14'>
+        <div className='flex flex-row tablet:flex-col phone:flex-col py-24 gap-14'>
 
           {/* role */}
-          <div className='flex flex-col gap-4 w-[50%]'>
+          <div className='flex flex-col gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>My Role</span>
             <span className='text-[#393939] text-lg tracking-[0.03em]'>
             I was and intern at a local startup company where I was the lead web designer for this entire project to put together the existing brand assets. The brand assets were developed by John, the company’s graphics designer. And also collaborated with our supervisor, Zach, from time to time for feedbacks.
@@ -116,7 +115,7 @@ function NomoSpaceProject() {
           </div>
 
           {/* Goal */}
-          <div className='flex-col flex gap-4 w-[50%]'>
+          <div className='flex-col flex gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Goal</span>
             <span className='text-[#393939] text-2xl font-semibold italic'>Express and highlight the brand’s distinctive qualities from other present brands.</span>
             <span className='text-[#393939] text-lg tracking-[0.03em]'>
@@ -131,7 +130,7 @@ function NomoSpaceProject() {
         <hr className='border-[#24303C] opacity-40 mt-6'/>
 
         {/* user persona */}
-        <div className='flex flex-col py-16 gap-6'>
+        <div className='flex flex-col w-full py-16 gap-6'>
           <span className='font-secondary font-semibold text-4xl text-[#24303C]'>User Persona</span>
           <span className='text-[#393939] text-lg tracking-[0.03em] pb-8'>
             Based on the interview and survey conducted during the preliminary research, this user persona was created  to better understand and put together the needs and and goals of the target group of users. 
@@ -139,11 +138,11 @@ function NomoSpaceProject() {
 
           {/* user personal profile */}
 
-          <div className='flex flex-row gap-16'>
-            <div className='w-[40%]'>
+          <div className='flex flex-row w-full gap-16 phone:flex-col'>
+            <div className='w-[40%] phone:w-full'>
               <img src={UserPersona} alt='user persona' className='h-auto w-full rounded-lg shadow-xl'/>
             </div>
-            <div className='w-[60%] flex flex-col gap-2'>
+            <div className='w-[60%] phone:w-full flex flex-col gap-2'>
               <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Vanessa</span>
               <span className='text-[#24303C] text-lg tracking-[0.03em] pb-4'>Virtual Assistant / Freelancer</span>
               <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>BACKGROUND</span>
@@ -161,7 +160,7 @@ function NomoSpaceProject() {
 
             <hr className='border-[#24303C] mt-6'/>
 
-            <div className='flex flex-row gap-2 align-middle justify-between py-8'>
+            <div className='flex flex-row phone:flex-col gap-2 align-middle justify-between py-8 phone:px-10 phone:gap-6'>
               <div className='flex flex-col gap-1'>
                 <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>AGE</span>
                 <span className='font-secondary font-semibold text-[#24303C] tracking-[0.03em]'>25 - 40</span>
@@ -180,14 +179,14 @@ function NomoSpaceProject() {
               </div>
               <div className='flex flex-col gap-1'>
                 <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>OCCUPATION</span>
-                <ul className='font-secondary font-semibold text-[#24303C] tracking-[0.03em] list-disc'>
+                <ul className='font-secondary font-semibold text-[#24303C] tracking-[0.03em] list-disc phone:px-8'>
                   <li>Virtual Assistant</li>
                   <li>Freelancer</li>
                   <li>Remote Workers</li>
                   <li>Students</li>
                 </ul>
               </div>
-              <div className='flex flex-col gap-1 w-[15%]'>
+              <div className='flex flex-col gap-1 w-[15%] phone:w-full'>
                 <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>TECH SAVVINESS</span>
                 <span className='font-secondary font-semibold text-[#24303C] tracking-[0.03em]'>Comfortable with digital tools, platform, and social media</span>
               </div>
@@ -199,11 +198,11 @@ function NomoSpaceProject() {
 
         {/* challenges & motivation */}
 
-        <div className='flex flex-row gap-14 pb-8'>
+        <div className='flex flex-row gap-14 pb-8 phone:flex-col'>
           {/* challenges */}
-          <div className=' flex flex-col w-[50%] gap-8'>
+          <div className=' flex flex-col w-[50%] phone:w-full gap-8'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>CHALLENGES</span>
-            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-2 list-disc'>
+            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-2 list-disc tablet:pl-10 phone:pl-8'>
               <li>Balancing work responsibilities with the need for social interaction.</li>
               <li>Finding a workspace that fosters both creativity and concentration.</li>
               <li>Staying motivated and avoiding burnout while working independently.</li>
@@ -214,9 +213,9 @@ function NomoSpaceProject() {
           </div>
 
           {/* motivation */}
-          <div className='flex flex-col w-[50%] gap-8'>
+          <div className='flex flex-col w-[50%] phone:w-full gap-8'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>MOTIVATION</span>
-            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-3 list-disc'>
+            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-3 list-disc tablet:pl-10 phone:pl-8'>
               <li>Find a comfortable and inspiring workspace away from home.</li>
               <li>Increase productivity by working in a focused and creative environment.</li>
               <li>Network and connect with like-minded professionals.</li>
@@ -231,9 +230,9 @@ function NomoSpaceProject() {
         {/* user flow */}
         <div className='flex flex-col py-16 gap-6'>
           <span className='font-secondary font-semibold text-4xl text-[#24303C]'>User Flow</span>
-          <span className='w-[60%] text-[#393939] text-lg tracking-[0.03em]'>Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.</span>
-          <div className='px-10 w-full h-[150vh] rounded-lg shadow-2xl'>
-            <img src={UserFlow} alt='user flow' className='h-auto w-full p-10'/>
+          <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em]'>Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.</span>
+          <div className='px-10 w-full h-[150vh] phone:h-auto phone:px-0 rounded-lg shadow-2xl'>
+            <img src={UserFlow} alt='user flow' className='h-auto w-full p-10 phone:p-3'/>
           </div>
         </div>
 
@@ -265,8 +264,8 @@ function NomoSpaceProject() {
 
           <div className='flex flex-col gap-4'>
             <span className='font-secondary text-sm text-[#747474] tracking-[0.07em]'>LOW-FIDELITY DESIGNS</span>
-            <div className='px-10 py-8 overflow-hidden bg-gray-400 bg-opacity-30 rounded-2xl'>
-              <div className='flex flex-row gap-2 h-[100vh] w-full items-start justify-between'>
+            <div className='px-10 phone:px-3 phone:py-3 py-8 overflow-hidden bg-gray-400 bg-opacity-30 rounded-2xl'>
+              <div className='flex flex-row gap-2 h-[100vh] phone:h-auto w-full items-start justify-between'>
                 <img src={LofiVer1} alt='lofi ver1' className='h-auto w-[30%] rounded-2xl'/>
                 <img src={LofiVer2} alt='lofi ver1' className='h-auto w-[30%] rounded-2xl'/>
                 <img src={LofiVer3} alt='lofi ver1' className='h-auto w-[30%] rounded-2xl'/>
@@ -276,28 +275,28 @@ function NomoSpaceProject() {
 
           {/* high-fidelity designs */}
 
-          <div className='flex flex-col gap-4 py-16'>
-            <span className='text-[#393939] text-lg tracking-[0.03em] w-[60%]'>
+          <div className='flex flex-col gap-4 py-16 phone:py-10'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] w-[60%] phone:w-full'>
               I then converted these wireframes into high-fidelity designs and experimented with the color combinations using the style guide developed by John.
               <br/><br/>
               Multiple versions were created every after internal testing and feedback cycle within the team.
             </span>
 
-            <div className='px-10 py-8 overflow-hidden bg-gray-400 bg-opacity-30 rounded-2xl'>
-              <div className='flex flex-row gap-2 h-[100vh] w-full items-start justify-between'>
+            <div className='px-10 phone:px-3 phone:py-3 py-8 overflow-hidden bg-gray-400 bg-opacity-30 rounded-2xl'>
+              <div className='flex flex-row gap-2 h-[100vh] phone:h-auto w-full items-start justify-between'>
 
                 <div className='w-[30%] h-full flex flex-col gap-3'>
-                  <span>Version 1</span>
+                  <span className='phone:text-xs phone:opacity-60'>Version 1</span>
                   <img src={Version1} alt='lofi ver1' className='h-auto w-full rounded-2xl'/>
                 </div>
                 
                 <div className='w-[30%] h-full flex flex-col gap-3'>
-                  <span>Version 1</span>
+                  <span className='phone:text-xs phone:opacity-60'>Version 1</span>
                   <img src={Version2} alt='lofi ver1' className='h-auto w-full rounded-2xl'/>
                 </div>
 
                 <div className='w-[30%] h-full flex flex-col gap-3'>
-                  <span>Version 1</span>
+                  <span className='phone:text-xs phone:opacity-60'>Version 1</span>
                   <img src={Version3} alt='lofi ver1' className='h-auto w-full rounded-2xl'/>
                 </div>
               </div>
@@ -325,19 +324,19 @@ function NomoSpaceProject() {
           </div>
 
           <div className='flex flex-col gap-12 w-full'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 w-full'>
               <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>Menu Pages</span>
-              <div className='flex flex-row gap-8'>
-                <img src={CoffeMenu} alt='coffee-menu' className='h-auto w-[50%] rounded-2xl'/>
-                <img src={DessertMenu} alt='dessert-menu' className='h-auto w-[50%] rounded-2xl'/>
+              <div className='flex flex-row phone:flex-col gap-8 w-full'>
+                <img src={CoffeMenu} alt='coffee-menu' className='h-auto w-[50%] phone:w-full rounded-2xl'/>
+                <img src={DessertMenu} alt='dessert-menu' className='h-auto w-[50%] phone:w-full rounded-2xl'/>
               </div>
             </div>
 
             <div className='flex flex-col gap-4'>
               <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>Products View</span>
-              <div className='flex flex-row gap-8'>
-                <img src={Coffee} alt='coffee-menu' className='h-auto w-[50%] rounded-2xl'/>
-                <img src={Dessert} alt='dessert-menu' className='h-auto w-[50%] rounded-2xl'/>
+              <div className='flex flex-row phone:flex-col gap-8'>
+                <img src={Coffee} alt='coffee-menu' className='h-auto w-[50%] rounded-2xl phone:w-full'/>
+                <img src={Dessert} alt='dessert-menu' className='h-auto w-[50%] rounded-2xl phone:w-full'/>
               </div>
             </div>
           </div>
@@ -346,7 +345,7 @@ function NomoSpaceProject() {
         <hr className='border-[#24303C] opacity-40 mt-6'/>
 
         {/* conclusion */}
-        <div className='flex flex-col gap-8 pt-16 pb-48 px-48'>
+        <div className='flex flex-col gap-8 pt-16 pb-48 px-48 tablet:px-0 phone:px-0'>
           <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Reflection</span>
 
           <hr className='border-[#24303C] opacity-40 my-6'/>
