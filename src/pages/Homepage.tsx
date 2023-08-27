@@ -18,7 +18,7 @@ function Homepage() {
     <div className='flex flex-col w-screen h-auto'>
       <Background />
       
-      <div className='z-10 desktop:px-48 widescreen:px-72 w-screen px-5 tablet:px-10'>
+      <div className='z-10 desktop:px-48 widescreen:px-48 w-screen px-5 tablet:px-10'>
 
         {/* HERO */}
         <div className='w-full h-[85vh] flex flex-row phone:h-full phone:flex-col tablet:h-full tablet:flex-col phone:gap-12'>
@@ -30,12 +30,12 @@ function Homepage() {
           </div>
 
           <div className='flex flex-row phone:flex-col-reverse tablet:flex-col-reverse gap-8 w-[30%] phone:w-full phone:text-center phone:justify-center phone:items-center items-end justify-end'>
-              <span className='text-neutral font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
-              about <span className='text-accent'>Ella</span></span>
-              <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
-                <Icons.ArrowDown className='text-neutral w-14 h-auto' />
-              </div>
-            </div>          
+            <span className='text-neutral font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
+            about <span className='text-accent'>Ella</span></span>
+            <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-500 opacity-80 flex items-center justify-center'>
+              <Icons.ArrowDown className='text-neutral w-14 h-auto' />
+            </div>
+          </div>          
         </div>
 
         {/* SKILLS */}
@@ -94,7 +94,7 @@ function Homepage() {
             </div>
 
             <div className='w-[60%] flex items-center justify-center phone:w-full'>
-              <img src={Nomo} alt='nomo thumbnail' className='h-[400px] w-auto tablet:h-[300px] phone:h-full'/>
+              <img src={Nomo} alt='nomo thumbnail' className='h-auto w-full tablet:h-[300px] phone:h-full'/>
             </div>
           </div>
 
@@ -132,7 +132,6 @@ function Homepage() {
       <div className='z-10 w-sceen pt-8'>
         <Footer />
       </div>   
-
     </div>
   )
 }

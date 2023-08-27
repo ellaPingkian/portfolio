@@ -35,7 +35,7 @@ function Footer() {
   ]
 
   return (
-    <div className='phone:gap-8 px-5 tablet:px-10  desktop:px-48 widescreen:px-72  w-screen pt-12 flex flex-col bg-accent bg-opacity-0 overscroll-none'>
+    <div className='phone:gap-8 px-5 tablet:px-10  desktop:px-48 widescreen:px-48  w-screen pt-12 flex flex-col bg-accent bg-opacity-0 overscroll-none'>
       <div className='flex flex-col'>
         <span className='text-neutral font-secondary text-md tracking-[0.07em] phone:text-sm'>I'm</span>
         <div className='py-6 antialiased flex flex-col text-[195px] phone:text-[96px] tablet:text-[125px] font-main text-accent leading-[75%]'>

@@ -10,31 +10,31 @@ import * as Icons from "iconsax-react"
 
 function Works() {
   return (
-    <div className="flex flex-col h-auto w-screen bg-opacity-30 bg-bg">
+    <div className="flex flex-col h-auto w-screen">
       {/* <Footer /> */}
 
       <Background />
 
-      <div className="z-10">
+      <div className="z-10 desktop:px-48 widescreen:px-72 w-screen px-5 tablet:px-10">
 
         {/* HERO */}
-        <div className="flex flex-col gap-4 px-48 overflow-x-auto">
-          <div className="flex flex-col font-main text-accent items-center gap-2 py-8">
-            <span className="text-5xl opacity-60">Research.</span>
-            <span className="text-5xl opacity-60">Design.</span>
-            <span className="text-5xl opacity-60">Experience.</span>
-            <span className="text-[180px] italic leading-[90%]">Deliver.</span>
+        <div className="w-full flex flex-col gap-4 overflow-x-auto ">
+          <div className="flex w-full flex-col font-main text-accent items-center gap-2 py-8 text-5xl phone:text-3xl">
+            <span className="opacity-60">Research.</span>
+            <span className="opacity-60">Design.</span>
+            <span className="opacity-60">Experience.</span>
+            <span className="text-[180px] phone:text-7xl italic leading-[90%]">Deliver.</span>
           </div>
 
-          <div className="flex flex-row gap-8 px-32 py-8 items-end text-[#C2C2C2]">
-            <div className="w-[20%]">
-              <div className='h-[110px] w-[110px] rounded-full bg-transparent border-2 border-dashed border-gray-700 flex items-center justify-center'>
+          <div className="flex w-full flex-row phone:flex-col tablet:px-20 gap-8 desktop:px-32 widescreen:px-48 py-8 items-end text-[#C2C2C2]">
+            <div className="w-[20%] phone:w-full flex phone:justify-center">
+              <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-500 flex items-center justify-center'>
                 <Icons.ArrowDown className='w-14 h-auto' />
               </div>
             </div>
 
-            <div className="w-[80%] pb-4">
-              <span className="font-secondary tracking-[0.10em] text-sm">
+            <div className="w-[80%] pb-4 phone:w-full phone:text-center">
+              <span className="font-secondary tracking-[0.10em] text-sm phone:">
               A compilation of my past projects, each telling a unique story of creativity and accomplishment and encapsulates the journey of my professional growth.
               </span>
             </div>
@@ -44,13 +44,15 @@ function Works() {
 
         {/* WORKS */}
         <div className="flex flex-col h-screen gap-4 bg-gray-700 bg-opacity-30">
-          <span className='pt-48 font-main font-bold text-[150px] text-center text-bg leading-[85%]'>Creativity <br/>in Progress!</span>
+          <span className='pt-48 font-main font-bold text-[150px]  phone:text-4xl text-center text-bg leading-[85%]'>Creativity <br/>in Progress!</span>
         </div>
 
+      </div>
 
-        {/* FOOTER */}
+      <div className='z-10 w-sceen pt-8'>
         <Footer />
       </div>
+
     </div>
   )
 }
