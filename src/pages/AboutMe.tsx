@@ -27,25 +27,25 @@ function AboutMe() {
 
           <div className='flex flex-col text-accent gap-4 phone:gap-1'>
             <span className='flex gap-4 items-end'>
-              <span className='font-secondary text-6xl phone:text-2xl opacity-60 pb-2 phone:pb-0 tracking-[0.08em]'>
+              <span className='font-secondary text-6xl phone:text-2xl tablet:text-5xl opacity-60 pb-2 phone:pb-0 tracking-[0.08em]'>
               And
               </span>
-              <span className='font-main text-9xl italic phone:text-[40px]'>
+              <span className='font-main text-9xl italic phone:text-[40px] tablet:text-7xl'>
                 I Empower
               </span>
             </span>
             
-            <span className='font-secondary text-6xl opacity-60 pb-4 leading-[120%] tracking-[0.08em] phone:text-2xl'>
+            <span className='font-secondary text-6xl opacity-60 pb-4 leading-[120%] tracking-[0.08em] phone:text-2xl tablet:text-5xl'>
               User Journeys, <br/> One Design at a Time.
             </span>
             
           </div>
 
-          <div className='flex flex-row w-full phone:flex-col'>
+          <div className='flex flex-row w-full phone:flex-col tablet:flex-col'>
           
-            <span className='text-[#C2C2C2] font-secondary tracking-[0.10em] w-[50%] phone:w-full phone:text-sm'>An innovative UI/UX designer with a passion for crafting seamless digital experiences.</span>
+            <span className='text-[#C2C2C2] font-secondary tracking-[0.10em] w-[50%] tablet:w-[70%] phone:w-full phone:text-sm'>An innovative UI/UX designer with a passion for crafting seamless digital experiences.</span>
 
-            <div className='flex flex-row gap-8 w-[50%] phone:flex-col-reverse tablet:flex-col-reverse  phone:w-full phone:text-center phone:justify-center phone:items-center phone:pt-20 items-end justify-end'>
+            <div className='flex flex-row gap-8 w-[50%] phone:flex-col-reverse tablet:flex-col-reverse  phone:w-full tablet:w-full phone:text-center phone:justify-center tablet:justify-center tablet:items-center phone:items-center phone:pt-20 tablet:pt-20 items-end justify-end'>
               <span className='text-neutral font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
             about <span className='text-accent'>Ella</span></span>
               <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-500 opacity-80 flex items-center justify-center'>

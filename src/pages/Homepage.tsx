@@ -29,7 +29,7 @@ function Homepage() {
             <span className='italic'>Deliver.</span>
           </div>
 
-          <div className='flex flex-row phone:flex-col-reverse tablet:flex-col-reverse gap-8 w-[30%] phone:w-full phone:text-center phone:justify-center phone:items-center items-end justify-end'>
+          <div className='flex flex-row phone:flex-col-reverse tablet:flex-col-reverse gap-8 w-[30%] phone:w-full tablet:w-full phone:text-center phone:justify-center tablet:items-center phone:items-center items-end justify-end'>
             <span className='text-neutral font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
             about <span className='text-accent'>Ella</span></span>
             <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-500 opacity-80 flex items-center justify-center'>
@@ -94,7 +94,7 @@ function Homepage() {
             </div>
 
             <div className='w-[60%] flex items-center justify-center phone:w-full'>
-              <img src={Nomo} alt='nomo thumbnail' className='h-auto w-full tablet:h-[300px] phone:h-full'/>
+              <img src={Nomo} alt='nomo thumbnail' className='h-full w-auto tablet:h-[300px] phone:h-full'/>
             </div>
           </div>
 
