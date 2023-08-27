@@ -39,7 +39,7 @@ function Navbar() {
   return (
 
     // <div className={`sticky ${ direction === "down" ? "-top-[75px]" : "top-0"} w-screen h-[75px] flex flex-row items-center justify-between px-48 bg-accent bg-opacity-20 `}>
-    <div className='h-20 w-screen bg-transparent bg-opacity-20 flex flex-row gap-8 px-48 phone:px-10 tablet:px-10'>
+    <div className='h-20 w-screen bg-transparent bg-opacity-20 flex flex-row gap-8 px-48 widescreen:px-72 phone:px-5 tablet:px-10'>
 
       <div className='w-[20%] items-center flex'>
         <img src={Logo} alt='logo' className='h-auto w-[40px] xs:w-full'/>

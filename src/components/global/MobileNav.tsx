@@ -30,13 +30,13 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
   return (
     <div className='fixed z-20 inset-0 bg-bg bg-opacity-40 backdrop-blur-2xl pt-6'>
 
-      <div className='flex flex-col px-10 gap-10'>
+      <div className='flex flex-col phone:px-5 tablet:px-10 gap-10'>
 
         <div className='flex justify-end'>
           <button className='rounded-full flex items-center text-white select-none ml-auto' onClick={handleOnCLose}> <Icons.CloseCircle className='h-10 w-auto'/> </button>
         </div>
 
-        <div className='flex flex-col tablet:px-24'>
+        <div className='flex flex-col tablet:px-24 gap-8'>
           <ul className='flex flex-col justify-end gap-6 font-secondary tracking-[0.07em] text-xl text-white text-right'>
             { NavData.map((item, index) => {
               const resolvedPath = useResolvedPath(item.path)

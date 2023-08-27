@@ -18,22 +18,22 @@ function Homepage() {
     <div className='flex flex-col w-screen h-auto'>
       <Background />
       
-      <div className='z-10 desktop:px-48 widescreen:px-48 w-screen px-10'>
+      <div className='z-10 desktop:px-48 widescreen:px-72 w-screen px-5 tablet:px-10'>
 
         {/* HERO */}
-        <div className='w-full h-[85vh] flex flex-row phone:h-full phone:flex-col phone:gap-12'>
-          <div className='w-[70%] phone:w-full py-8 antialiased flex flex-col justify-center text-9xl phone:text-4xl font-main text-accent leading-[75%] gap-4 phone:gap-0'>
+        <div className='w-full h-[85vh] flex flex-row phone:h-full phone:flex-col tablet:h-full tablet:flex-col phone:gap-12'>
+          <div className='w-[70%] phone:w-full py-8 antialiased flex flex-col justify-center text-9xl phone:text-5xl font-main text-accent leading-[75%] gap-4 phone:gap-0'>
             <span>Research.</span>
             <span className='italic'>Design.</span>
             <span>Experience.</span>
             <span className='italic'>Deliver.</span>
           </div>
 
-          <div className='flex flex-row phone:flex-col-reverse gap-8 w-[30%] phone:w-full phone:text-center phone:justify-center phone:items-center items-end justify-end'>
-              <span className='text-[#C2C2C2] font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
+          <div className='flex flex-row phone:flex-col-reverse tablet:flex-col-reverse gap-8 w-[30%] phone:w-full phone:text-center phone:justify-center phone:items-center items-end justify-end'>
+              <span className='text-neutral font-secondary text-md tracking-[0.07em] pb-4'>Explore more <br />
               about <span className='text-accent'>Ella</span></span>
               <div className='h-[110px] w-[110px] phone:h-[80px] phone:w-[80px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
-                <Icons.ArrowDown className='text-[#C2C2C2] w-14 h-auto' />
+                <Icons.ArrowDown className='text-neutral w-14 h-auto' />
               </div>
             </div>          
         </div>
@@ -48,7 +48,7 @@ function Homepage() {
               
             </div>
             <div className='w-[50%] phone:w-full pt-7 '>
-              <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-normal text-base'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
+              <span className='text-neutral tracking-[0.10em] font-secondary font-normal text-base phone:text-sm'>UI and UX, may not always come together in some cases, however, as a UI/UX Designer, I have established a strong understanding of the relationship between the two to make it work together harmoniously that make my design solutions captivating, engaging, and satisfactory to the user needs.</span>
             </div>
           </div>
 
@@ -82,12 +82,12 @@ function Homepage() {
             <div className='w-[40%] h-[60vh] flex flex-col justify-center gap-4 phone:w-full phone:h-auto'>
               <div className='flex flex-row items-end'>
                 <span className='w-[80%] font-secondary text-accent text-3xl tracking-[0.05em] font-extrabold'>Nomo Space</span>
-                <span className='w-[20%] text-right font-secondary text-[#C2C2C2] text-xs tracking-[0.05em] font-extrabold'>2023</span>
+                <span className='w-[20%] text-right font-secondary text-neutral text-xs tracking-[0.05em] font-extrabold'>2023</span>
               </div>
 
-              <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-light text-base'>A Coffee Space Brand aiming to establish their online presence highlighting their products, services, and space.</span>
+              <span className='text-neutral tracking-[0.10em] font-secondary text-base phone:text-sm'>A Coffee Space Brand aiming to establish their online presence highlighting their products, services, and space.</span>
 
-              <button onClick={() => navigate("/projects/nomo-studio")} className='h-11 md:w-full phone:w-full px-6 py-2 font-secondary bg-accent bg-opacity-25 tracking-[.07em] rounded-md hover:bg-accent mt-6 flex items-center justify-center gap-3 text-[#C2C2C2] hover:text-white ease-in-out duration-300'>
+              <button onClick={() => navigate("/projects/nomo-studio")} className='h-11 phone:w-full px-6 py-2 font-secondary bg-accent bg-opacity-25 tracking-[.07em] rounded-md hover:bg-accent mt-6 flex items-center justify-center gap-3 text-neutral hover:text-white ease-in-out duration-300'>
                 <span>View Case Study</span>
                 <Icons.ArrowRight className='-rotate-45'/>
               </button>              
@@ -98,7 +98,7 @@ function Homepage() {
             </div>
           </div>
 
-          <hr className='border-accent opacity-40'></hr>
+          {/* <hr className='border-accent opacity-40'></hr> */}
 
           {/* PROJECT 2 */}
           {/* <div className='flex flex-row my-20 gap-4 h-[70%] justify-between'>
@@ -108,9 +108,9 @@ function Homepage() {
                 <span className='w-[20%] text-right font-secondary text-[#404B52] text-xs tracking-[0.05em] font-extrabold'>2023</span>
               </div>
               
-              <span className='text-[#C2C2C2] tracking-[0.10em] font-secondary font-light text-[16px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus quis soluta eligendi tempora ipsa amet atque eveniet.</span>
+              <span className='text-neutral tracking-[0.10em] font-secondary font-light text-[16px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus quis soluta eligendi tempora ipsa amet atque eveniet.</span>
 
-              <button onClick={() => navigate("/projects/bohol-website-redesign")} className='h-11 md:w-full sm:w-full xs:w-full px-6 py-2 font-secondary bg-accent bg-opacity-25 tracking-[.07em] rounded-md hover:bg-accent mt-6 flex items-center justify-center gap-3 text-[#C2C2C2] hover:text-white ease-in-out duration-300'>
+              <button onClick={() => navigate("/projects/bohol-website-redesign")} className='h-11 md:w-full sm:w-full xs:w-full px-6 py-2 font-secondary bg-accent bg-opacity-25 tracking-[.07em] rounded-md hover:bg-accent mt-6 flex items-center justify-center gap-3 text-neutral hover:text-white ease-in-out duration-300'>
                 <span>View Case Study</span>
                 <Icons.ArrowRight className='-rotate-45'/>
               </button>
