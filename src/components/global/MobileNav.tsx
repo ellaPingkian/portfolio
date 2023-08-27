@@ -30,13 +30,13 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
   return (
     <div className='fixed z-20 inset-0 bg-bg bg-opacity-40 backdrop-blur-2xl pt-6'>
 
-      <div className='flex flex-col pt-4 px-10 gap-10'>
+      <div className='flex flex-col px-10 gap-10'>
 
         <div className='flex justify-end'>
           <button className='rounded-full flex items-center text-white select-none ml-auto' onClick={handleOnCLose}> <Icons.CloseCircle className='h-10 w-auto'/> </button>
         </div>
 
-        <div className='flex items-center md:px-48 sm:px-24'>
+        <div className='flex flex-col tablet:px-24'>
           <ul className='flex flex-col justify-end gap-6 font-secondary tracking-[0.07em] text-xl text-white text-right'>
             { NavData.map((item, index) => {
               const resolvedPath = useResolvedPath(item.path)
@@ -54,12 +54,13 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
               )
             })}
           </ul>
-        </div>
 
-        <div className='flex items-center md:px-48 sm:px-24' >
-          <button className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300'>Get in Touch</button>
-        </div>
+          <div className='flex items-center md:px-48 sm:px-24' >
+            <button className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300'>Get in Touch</button>
+          </div>
 
+
+        </div>
         
       </div>
       

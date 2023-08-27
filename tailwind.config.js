@@ -4,32 +4,23 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     screens: {
-      'sm': {'min': '640px', 'max': '767px'},
-      // => @media (min-width: 640px and max-width: 767px) { ... }
-
-      'md': {'min': '768px', 'max': '1023px'},
-      // => @media (min-width: 768px and max-width: 1023px) { ... }
-
-      'lg': {'min': '1024px', 'max': '1279px'},
-      // => @media (min-width: 1024px and max-width: 1279px) { ... }
-
-      'xl': {'min': '1280px', 'max': '1535px'},
-      // => @media (min-width: 1280px and max-width: 1535px) { ... }
-
-      '2xl': {'min': '1536px'},
-      // => @media (min-width: 1536px) { ... }
     },
 
     extend: {
-      screens:{
-        'xs': {'min': '320px', 'max': '639px'},
+      screens: {
+        'phone': { 'min': '0px', 'max': '639px' },
+        'tablet': { 'min': '640px', 'max': '1023px' },
+        'desktop': { 'min': '1024px', 'max': '1279px' },
+        'widescreen': { 'min': '1280px' },
       },
 
       colors: {
         "bg": "#141C21",
         "accent": "#E76A50",
+        "neutral": "#C2C2C2",
       },
       fontFamily: {
         "main": ["Fraunces", "serif"],

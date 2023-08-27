@@ -60,7 +60,7 @@ function AboutMe() {
           <div className='py-20 flex flex-row'>
             <div className='flex flex-row'>
               <div className='w-[50%] flex flex-col'>
-                <span className='text-[#A3A3A3] tracking-[0.07em] text-sm font-secondary pb-2'>My Bio</span>
+                <span className='text-[#C2C2C2] tracking-[0.07em] text-sm font-secondary pb-2 text-opacity-40'>My Bio</span>
                 <span className='font-main text-5xl text-accent'>A little something <br/> about me</span>
               </div>
               <div className='w-[50%] pt-7 gap-8 flex flex-col'>
