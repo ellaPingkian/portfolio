@@ -15,7 +15,9 @@ function Works() {
 
       <Background />
 
-      <div className="z-10 desktop:px-48 widescreen:px-72 w-screen px-5 tablet:px-10">
+      {/* widescreen:px-72 */}
+
+      <div className="z-10 desktop:px-48 widescreen:px-48 w-screen px-5 tablet:px-10">
 
         {/* HERO */}
         <div className="w-full flex flex-col gap-4 overflow-x-auto ">

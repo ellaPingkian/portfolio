@@ -143,12 +143,13 @@ function AboutMe() {
             </div>
 
             <div className='w-[60%] phone:w-full flex flex-col phone:px-10'>
-              <ul className='text-[#e6e6e6] tracking-[0.10em] font-secondary phone:text-xs font-light list-disc leading-8'>
+              <ul className='text-[#e6e6e6] tracking-[0.10em] font-secondary phone:text-sm font-light list-disc leading-8'>
                 <li>User Interface Design</li>
                 <li>User Experience Design</li>
                 <li>Frontend Developement</li>
                 <li>Wireframing</li>
                 <li>Prototyping</li>
+                <li>Problem Solving</li>
                 <li>Critical Thinking</li>
               </ul>
             </div>

@@ -56,7 +56,8 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
           </ul>
 
           <div className='flex items-center md:px-48 sm:px-24' >
-            <button className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300'>Get in Touch</button>
+            <Link to='mailto:ellpingkian@gmail.com' className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center'>Get in Touch</Link>
+            
           </div>
 
 

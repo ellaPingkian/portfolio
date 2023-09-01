@@ -20,7 +20,7 @@ import ScrollOnTop from '../../components/global/ScrollOnTop'
 
 function NomoSpaceProject() {
   return (
-    <div className='flex flex-col w-screen bg-[#e2d7d7] h-auto'>
+    <div className='flex flex-col w-screen bg-[#F4F4F4] h-auto'>
       <ScrollOnTop />
       {/* bg-[#e2d7d7] */}
       <div className="w-screen px-24 h-auto phone:px-5 tablet:px-10">
