@@ -82,7 +82,7 @@ function NomoSpaceProject() {
         <div className='flex flex-row tablet:flex-col phone:flex-col py-24 gap-14'>
           <div className='flex flex-col gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>A little something about the brand...</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
               Nomo Space is a coffee space brand which promotes a safe, friendly, and comfortable workspace for young professionals, freelancers, and students alike while also offering a variety of drinks and snacks including coffees, teas, and desserts.
             </span>
           </div>
@@ -91,7 +91,7 @@ function NomoSpaceProject() {
           <div className='flex-col flex gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Problem Statement</span>
             <span className='text-[#393939] text-2xl font-semibold italic'>The absence of an online presence.</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
               In this modern age, the absence of a website greatly affects to its online presence. Without a website, the brand will unable to showcase its cozy space and menu offerings, engage its potential customers, and express its campaign.
               <br/> <br/>
               This problem also contributes to the brand being left behind on the market trend of online ordering, which is also one of the main goals of the brand. 
@@ -107,7 +107,7 @@ function NomoSpaceProject() {
           {/* role */}
           <div className='flex flex-col gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>My Role</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
             I was and intern at a local startup company where I was the lead web designer for this entire project to put together the existing brand assets. The brand assets were developed by John, the company’s graphics designer. And also collaborated with our supervisor, Zach, from time to time for feedbacks.
             <br/> <br/>
             I was tasked to develop a responsive website  that is not just compelling but also radiates and attracts audience’s interest that induces creativity, collaboration, and success in them. 
@@ -118,7 +118,7 @@ function NomoSpaceProject() {
           <div className='flex-col flex gap-4 w-[50%] tablet:w-full phone:w-full'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Goal</span>
             <span className='text-[#393939] text-2xl font-semibold italic'>Express and highlight the brand’s distinctive qualities from other present brands.</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
             It aims to create an impactful online presence and unique identity to detach from the conventional coffee space brand in the market and to stand out from those other existing brands. Also, to effectively communicate and emphasize the brand’s unique selling points, core values, and key features to invite customers to try its products and services.
             </span>
             <span className='text-[#393939] text-2xl font-semibold italic pt-4'>Introduce cashless and hassle free ordering system.</span>
@@ -132,7 +132,7 @@ function NomoSpaceProject() {
         {/* user persona */}
         <div className='flex flex-col w-full py-16 gap-6'>
           <span className='font-secondary font-semibold text-4xl text-[#24303C]'>User Persona</span>
-          <span className='text-[#393939] text-lg tracking-[0.03em] pb-8 phone:text-base'>
+          <span className='text-[#393939] text-lg tracking-[0.03em] pb-8 phone:text-sm'>
             Based on the interview and survey conducted during the preliminary research, this user persona was created  to better understand and put together the needs and and goals of the target group of users. 
           </span>
 
@@ -146,7 +146,7 @@ function NomoSpaceProject() {
               <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Vanessa</span>
               <span className='text-[#24303C] text-lg tracking-[0.03em] pb-4'>Virtual Assistant / Freelancer</span>
               <span className='font-secondary text-xs text-[#747474] tracking-[0.07em]'>BACKGROUND</span>
-              <span className='text-[#393939] text-lg tracking-[0.03em] pb-4 phone:text-base'>
+              <span className='text-[#393939] text-lg tracking-[0.03em] pb-4 phone:text-sm'>
                 Vanessa is a virtual assistant and a freelancer with a strong entrepreneurial spirit who loves to work remotely. With the nature of work she does, she needs a comfortable and engaging workspace aside form her home that offers the flexibility to work efficiently while enjoying some social interaction. She enjoys the cozy ambiance plus the aroma of the freshly brewed coffee while being productive.
                 <br/> <br/>
                 However, coffee shops near her are not work friendly spaces because of the different customers it caters resulting to environmental noise that distracts her while doing her work resulting to unproductivity and loss of focus. With that, Nomo Space’s well designed communal spaces and private nooks cater perfectly to Alex's need for both collaborative discussions and moments of solitary concentration.                
@@ -202,7 +202,7 @@ function NomoSpaceProject() {
           {/* challenges */}
           <div className=' flex flex-col w-[50%] phone:w-full gap-8'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>CHALLENGES</span>
-            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-2 list-disc tablet:pl-10 phone:pl-8 phone:text-base'>
+            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-2 list-disc tablet:pl-10 phone:pl-8 phone:text-sm'>
               <li>Balancing work responsibilities with the need for social interaction.</li>
               <li>Finding a workspace that fosters both creativity and concentration.</li>
               <li>Staying motivated and avoiding burnout while working independently.</li>
@@ -215,7 +215,7 @@ function NomoSpaceProject() {
           {/* motivation */}
           <div className='flex flex-col w-[50%] phone:w-full gap-8'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>MOTIVATION</span>
-            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-3 list-disc tablet:pl-10 phone:pl-8 phone:text-base'>
+            <ul className='text-[#393939] text-lg tracking-[0.03em] gap-3 list-disc tablet:pl-10 phone:pl-8 phone:text-sm'>
               <li>Find a comfortable and inspiring workspace away from home.</li>
               <li>Increase productivity by working in a focused and creative environment.</li>
               <li>Network and connect with like-minded professionals.</li>
@@ -230,7 +230,7 @@ function NomoSpaceProject() {
         {/* user flow */}
         <div className='flex flex-col py-16 gap-6'>
           <span className='font-secondary font-semibold text-4xl text-[#24303C]'>User Flow</span>
-          <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em] phone:text-base'>Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.</span>
+          <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.</span>
           <div className='px-10 w-full h-[150vh] phone:h-auto phone:px-0 rounded-lg shadow-2xl'>
             <img src={UserFlow} alt='user flow' className='h-auto w-full p-10 phone:p-3'/>
           </div>
@@ -242,7 +242,7 @@ function NomoSpaceProject() {
         <div className='flex flex-col gap-12 py-16'>
           <div className='flex flex-col gap-4'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Style Guide</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>Primarily, this style guide was created by John and later on collaborated with other designers inside the company in finding the right color combination for the brand. </span>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>Primarily, this style guide was created by John and later on collaborated with other designers inside the company in finding the right color combination for the brand. </span>
           </div>
           <div className='flex justify-center px-10 w-full h-auto rounded-lg shadow-2xl'>
             <img src={StyleGuide} alt='style guide' className='h-auto w-[80%]'/>
@@ -254,7 +254,7 @@ function NomoSpaceProject() {
         <div className='flex flex-col gap-12 py-16'>
           <div className='flex flex-col gap-4'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Early Ideation</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
               Before proceeding to creating the high fidelity designs, the marketing interns (Barbie and Cristine) first presented the Nomo’s preliminary branding.
               <br/> <br/>
               In ideating, we focused on creating its homepage first after the research was conducted. I mainly used Figma as the collaboration tool where I can easily share to the team the progress of the actual design.
@@ -276,7 +276,7 @@ function NomoSpaceProject() {
           {/* high-fidelity designs */}
 
           <div className='flex flex-col gap-4 py-16 phone:py-10'>
-            <span className='text-[#393939] text-lg tracking-[0.03em] w-[60%] phone:w-full phone:text-base'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] w-[60%] phone:w-full phone:text-sm'>
               I then converted these wireframes into high-fidelity designs and experimented with the color combinations using the style guide developed by John.
               <br/><br/>
               Multiple versions were created every after internal testing and feedback cycle within the team.
@@ -313,7 +313,7 @@ function NomoSpaceProject() {
           <div className='flex flex-col gap-4'>
             <span className='font-secondary font-semibold text-4xl text-[#24303C]'>Final Designs</span>
             <span className='italic font-secondary font-semibold text-2xl text-[#24303C]'>High-fidelity Designs</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>After a few rounds of internal testing, revision and feedbacks, I have come up with the design that delivers a seamless, consistent, and user-centric design solution emphasizing how Nomo Space operates, its products and services, and how the place and the drinks offered comfort to others through the customer’s IG posts.</span>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>After a few rounds of internal testing, revision and feedbacks, I have come up with the design that delivers a seamless, consistent, and user-centric design solution emphasizing how Nomo Space operates, its products and services, and how the place and the drinks offered comfort to others through the customer’s IG posts.</span>
           </div>
 
           <div className='flex flex-col gap-4'>
@@ -352,21 +352,21 @@ function NomoSpaceProject() {
 
           <div className='flex flex-col gap-4'>
             <span className='italic font-secondary font-semibold text-2xl text-[#24303C]'>If I have more time...</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>I would continue the project from completing the whole initial system features and functionalities to testing the prototype until the second iteration of the designing phase. Because of the time restriction and the scope of the project, I was not able to conduct the user testing and the revisions.</span>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>I would continue the project from completing the whole initial system features and functionalities to testing the prototype until the second iteration of the designing phase. Because of the time restriction and the scope of the project, I was not able to conduct the user testing and the revisions.</span>
           </div>
 
           <hr className='border-[#24303C] opacity-40 my-6'/>
 
           <div className='flex flex-col gap-4'>
             <span className='italic font-secondary font-semibold text-2xl text-[#24303C]'>What I have learned in doing this project?</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>In the few weeks of creating this project, I have learned that designing a digital product is not only a one-man-job, it also requires a community that collaborates and constantly communicate in order to deliver a design solution that is user-centric and tailored-specific to the needs of the users.</span>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>In the few weeks of creating this project, I have learned that designing a digital product is not only a one-man-job, it also requires a community that collaborates and constantly communicate in order to deliver a design solution that is user-centric and tailored-specific to the needs of the users.</span>
           </div>
 
           <hr className='border-[#24303C] opacity-40 my-6'/>
 
           <div className='flex flex-col gap-4'>
             <span className='italic font-secondary font-semibold text-2xl text-[#24303C]'>What are the challenges I have faced during the curation of this project?</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-base'>Since this was my first UI/UX project without any prior experience, I would say that starting the project out is one of the hardest thing since the guidance from the company’s main graphic designer provided are only minimal. However, I have delivered this design solution effectively and successfully during my internship. </span>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>Since this was my first UI/UX project without any prior experience, I would say that starting the project out is one of the hardest thing since the guidance from the company’s main graphic designer provided are only minimal. However, I have delivered this design solution effectively and successfully during my internship. </span>
           </div>
         </div>
 
