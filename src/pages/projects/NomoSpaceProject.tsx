@@ -122,7 +122,7 @@ function NomoSpaceProject() {
             It aims to create an impactful online presence and unique identity to detach from the conventional coffee space brand in the market and to stand out from those other existing brands. Also, to effectively communicate and emphasize the brand’s unique selling points, core values, and key features to invite customers to try its products and services.
             </span>
             <span className='text-[#393939] text-2xl font-semibold italic pt-4'>Introduce cashless and hassle free ordering system.</span>
-            <span className='text-[#393939] text-lg tracking-[0.03em]'>
+            <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
             With the current market trend today, we want the brand to also adopt to the cashless system in paying their food and drinks. We also aim to introduce the QR-based menu scanning where customers get to order through their phones.</span>
           </div>
         </div>
