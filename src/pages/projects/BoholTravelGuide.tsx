@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Footer from '../../components/global/Footer'
 import ScrollOnTop from '../../components/global/ScrollOnTop'
 import BoholLogo from '../../assets/images/bohol/bohol-logo.png'
-import BoholMockup from '../../assets/images/bohol/mockup.png'
+import BoholMockup from '../../assets/images/thumbnail/boholtravelguideThumbnail.png'
 import SparkleDark from '../../assets/images/bohol/sparkle-dark.png'
 import SparkleLight from '../../assets/images/bohol/sparkle-light.png'
 import Age from '../../assets/images/bohol/chart1.png'
@@ -48,17 +48,20 @@ function BoholTravelGuide() {
       <div className="w-screen px-24 h-auto phone:px-5 tablet:px-10 font-secondary">
 
         {/* HERO */}
-        <div className='flex flex-row gap-12 tablet:flex-col phone:flex-col h-[80vh] tablet:h-auto phone:h-auto pt-12 text-[#24303C] tablet:gap-12 phone:gap-12'>
+        <div className='flex flex-row tablet:flex-col phone:flex-col h-[80vh] tablet:h-auto phone:h-auto pt-12 text-[#24303C] tablet:gap-12 phone:gap-12'>
           <div className='flex flex-col justify-between w-[35%] tablet:w-full phone:w-full tablet:text-center phone:text-center'>
-            <div className='flex flex-col justify-between gap-3'>
-              <img src={BoholLogo} alt='nomo thumbnail' className='h-[130px] w-auto'/>
+            <div className='flex flex-col justify-between gap-6'>
+              <div className='flex flex-col justify-between'>
+                <span className='font-secondary text-9xl font-extrabold tablet:text-8xl phone:text-7xl'>BOHOL</span> 
+                <span className='font-secondary text-6xl font-extrabold tablet:text-8xl phone:text-7xl'>TRAVEL GUIDE</span> 
+              </div>
               <span className='font-secondary text-2xl tablet:text-2xl'>Homepage Redesign</span>
             </div>
             <span className='font-secondary text-xl tablet:text-base tablet:pt-20 phone:text-sm phone:pt-20'>UI/UX Case Study</span>
           </div>
 
-          <div className='flex items-center w-[65%] tablet:w-full phone:w-full tablet:justify-center phone:justify-center rounded-3xl overflow-hidden'>
-            <img src={BoholMockup} alt='nomo thumbnail' className='h-auto w-[950px] tablet:h-[300px] phone:h-[250px]'/>
+          <div className='flex items-center justify-end w-[65%] tablet:w-full phone:w-full tablet:justify-center phone:justify-center'>
+            <img src={BoholMockup} alt='nomo thumbnail' className='h-[500px] w-auto tablet:h-[300px] phone:h-[250px]'/>
           </div>
         </div>
 
@@ -100,13 +103,13 @@ function BoholTravelGuide() {
         <div className='flex flex-col tablet:flex-col phone:flex-col py-24 gap-24'>
 
           {/* background */}
-          <div className='flex flex-row gap-24 w-full tablet:w-full phone:w-full'>
-            <div className='flex flex-row gap-6 w-[40%]'>
+          <div className='flex flex-row phone:flex-col gap-24 w-full tablet:w-full phone:w-full'>
+            <div className='flex flex-row gap-6 w-[40%] phone:w-full'>
               <img src={SparkleLight} alt='sparkle' className='h-[45px] w-auto' />
               <span className='font-secondary font-semibold text-4xl text-[#24303C]'>The Story Behind the Project</span>
             </div>
 
-            <div className='w-[60%]'>
+            <div className='w-[60%] phone:w-full'>
               <span className='w-[50%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm whitespace-pre-wrap'>
                 Bohol is such a beautiful place and so much people are adoring its natural wonders. With that, its tourism blossomed in such a way that no one has expected.
                 <br/><br/>
@@ -122,13 +125,13 @@ function BoholTravelGuide() {
           <hr className='border-[#24303C] opacity-40 mt-6'/>
 
           {/* Problem Statement */}
-          <div className='flex flex-row gap-24 w-full tablet:w-full phone:w-full'>
-            <div className='flex flex-row gap-6 w-[40%]'>
+          <div className='flex flex-row phone:flex-col gap-24 w-full tablet:w-full phone:w-full'>
+            <div className='flex flex-row gap-6 w-[40%] phone:w-full'>
               <img src={SparkleLight} alt='sparkle' className='h-[45px] w-auto' />
               <span className='font-secondary font-semibold text-4xl text-[#24303C]'>The Problem</span>
             </div>
 
-            <div className='w-[60%]'>
+            <div className='w-[60%] phone:w-full'>
               <span className='w-[50%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm whitespace-pre-wrap'>
               Scanning through the website, I can say that the design is not very attracting compared to other travel guide website homepages that I have visited before.
               <br/><br/>
@@ -142,13 +145,13 @@ function BoholTravelGuide() {
           <hr className='border-[#24303C] opacity-40 mt-6'/>
 
           {/* goals */}
-          <div className='flex flex-row gap-24 w-full tablet:w-full phone:w-full'>
-            <div className='flex flex-row gap-6 w-[40%]'>
+          <div className='flex flex-row phone:flex-col gap-24 w-full tablet:w-full phone:w-full'>
+            <div className='flex flex-row gap-6 w-[40%] phone:w-full'>
               <img src={SparkleLight} alt='sparkle' className='h-[45px] w-auto' />
               <span className='font-secondary font-semibold text-4xl text-[#24303C]'>The Goal</span>
             </div>
 
-            <div className='w-[60%]'>
+            <div className='w-[60%] phone:w-full'>
               <span className='w-[50%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm whitespace-pre-wrap'>
                 To redesign the Bohol Travel Guide homepage and reestablish the brand positioning of the website in order to improve the overall usability and accessibility of the homepage to give visitors with seamless and engaging experience of the homepage.
                 <br/><br/>
@@ -169,14 +172,14 @@ function BoholTravelGuide() {
           {/* research overview */}
           <div className='flex flex-col gap-12'>
             <span className='font-secondary font-semibold text-2xl text-[#24303C]'>Research Overview</span>
-            <div className='flex flex-row justify-between w-full'>
-              <div className='bg-[#D6EED7] flex flex-col w-[30%] h-[330px] px-8 py-12 gap-6 rounded-2xl'>
+            <div className='flex flex-row phone:flex-col phone:gap-8 justify-between w-full'>
+              <div className='bg-[#D6EED7] flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-[#24303C]'>Research Objectives</span>
                 <span className='font-secondary text-base text-[#5E6B78]'>To gather insights and different perspectives about the live and current Bohol Tours website for the redesigning of the website.</span>
               </div>
 
-              <div className='bg-[#D6EED7] flex flex-col w-[30%] h-[330px] px-8 py-12 gap-6 rounded-2xl'>
+              <div className='bg-[#D6EED7] flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-[#24303C]'>Respondents</span>
                 <ul className='font-secondary text-base text-[#5E6B78] list-disc pl-6'>
@@ -186,7 +189,7 @@ function BoholTravelGuide() {
                 </ul>
               </div>
 
-              <div className='bg-[#D6EED7] flex flex-col w-[30%] h-[330px] px-8 py-12 gap-6 rounded-2xl'>
+              <div className='bg-[#D6EED7] flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-[#24303C]'>Research Tools and Methods</span>
                 <ul className='font-secondary text-base text-[#5E6B78] list-disc pl-6'>
@@ -200,8 +203,8 @@ function BoholTravelGuide() {
           {/* system usability scale */}
           <div className='flex flex-col gap-12'>
             <span className='font-secondary font-semibold text-2xl text-[#24303C]'>System Usability Scale</span>
-            <div className='flex flex-row justify-between w-full gap-8'>
-              <div className='bg-white flex flex-col w-[50%] h-auto  px-8 py-12 gap-6 rounded-2xl'>
+            <div className='flex flex-row phone:flex-col phone:gap-8 justify-between w-full gap-8'>
+              <div className='bg-white flex flex-col w-[50%] phone:w-full h-auto px-8 py-12 gap-6 rounded-2xl'>
                 <div className="flex flex-row gap-4">
                   <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                   <span className='font-secondary font-semibold text-xl text-[#24303C]'>Questions</span>
@@ -253,7 +256,7 @@ function BoholTravelGuide() {
                 </div>
               </div>
 
-              <div className='bg-white flex flex-col w-[50%] h-auto px-8 py-12 gap-6 rounded-2xl'>
+              <div className='bg-white flex flex-col w-[50%] phone:w-full h-auto px-8 py-12 gap-6 rounded-2xl'>
                 <div className="flex flex-row gap-4">
                   <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                   <span className='font-secondary font-semibold text-xl text-[#24303C]'>How to Solve for SUS</span>
@@ -277,31 +280,31 @@ function BoholTravelGuide() {
             <span className='font-secondary font-semibold text-2xl text-[#24303C]'>System Usability Scale</span>
 
             {/* first row */}
-            <div className='flex flex-row gap-8 justify-between'>
-              <div className='flex flex-col gap-4 w-[30%]'>
+            <div className='flex flex-row phone:flex-col phone:gap-16 gap-8 justify-between'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"How old are you?"</span>
                 <img src={Age} alt="age"/>
               </div>
-              <div className='flex flex-col gap-4 w-[30%]'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"Where are you from?"</span>
                 <img src={Location} alt="location"/>
               </div>
-              <div className='flex flex-col gap-4 w-[30%]'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"Do you live in Bohol?"</span>
                 <img src={Residence} alt="residence"/>
               </div>
             </div>
 
-            <div className='flex flex-row gap-8 justify-between items-end'>
-              <div className='flex flex-col gap-4 w-[30%]'>
+            <div className='flex flex-row phone:flex-col phone:gap-16 gap-8 justify-between items-end'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"Do You Travel?"</span>
                 <img src={Travel} alt="travel"/>
               </div>
-              <div className='flex flex-col gap-4 w-[30%]'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"How many places in the Philippines have you visited?"</span>
                 <img src={TravelCount} alt="travel count"/>
               </div>
-              <div className='flex flex-col gap-4 w-[30%]'>
+              <div className='flex flex-col gap-4 w-[30%] phone:w-full'>
                 <span className='italic font-secondary'>"Have you been to Bohol?"</span>
                 <img src={BeenToBohol} alt="have you been to bohol?"/>
               </div>
@@ -315,26 +318,26 @@ function BoholTravelGuide() {
             <img src={SUSResult} alt="sus results" className='rounded-2xl shadow-xl'/>
 
             <div className='flex flex-col gap-4'>
-              <div className='flex flex-row gap-12 justify-between px-32 py-8 bg-gray-400 rounded-xl'>
+              <div className='flex flex-row phone:flex-col gap-12 justify-between px-32 py-8 phone:px-8 bg-gray-400 rounded-xl '>
                 <div className='flex gap-6 items-center'>
-                  <img src={SparkleDark} alt="sparkledark" className='h-[45px] w-auto'/>
+                  <img src={SparkleDark} alt="sparkledark" className='h-[45px] w-auto phone:h-[25px]'/>
                   <span className='text-xl '>SUS Overall Score: <span className='text-3xl font-bold'>60.21</span></span>
                 </div>
                 <div className='flex gap-6 items-center'>
-                  <img src={SparkleDark} alt="sparkledark" className='h-[45px] w-auto'/>
+                  <img src={SparkleDark} alt="sparkledark" className='h-[45px] w-auto phone:h-[25px]'/>
                   <span className='text-xl '>Adjective Rating: <span className='text-3xl font-bold'>Poor</span></span>
                 </div>
               </div>
 
-              <span className='font-secondary text-sm text-[#9198A1] tracking-[0.03em] phone:text-sm'>Reference: https://uiuxtrend.com/measuring-system-usability-scale-sus/</span>
+              <span className='font-secondary text-sm text-[#9198A1] tracking-[0.03em] phone:text-xs'>Reference: https://uiuxtrend.com/measuring-system-usability-scale-sus/</span>
             </div>
           </div>
 
           {/* detailed feedback */}
           <div className='flex flex-col gap-16'>
-            <span className='font-secondary font-semibold text-2xl text-[#24303C] w-[40%]'>Detailed Feedback from Respondents After Navigating the Website</span>
-            <div className='flex flex-row gap-12 bg-gray-300 py-12 px-12 rounded-xl'>
-              <div className='flex flex-col w-[50%] gap-8'>
+            <span className='font-secondary font-semibold text-2xl text-[#24303C] w-[40%] phone:w-full'>Detailed Feedback from Respondents After Navigating the Website</span>
+            <div className='flex flex-row phone:flex-col phone:gap-8 gap-12 bg-gray-300 py-12 px-12 rounded-xl '>
+              <div className='flex flex-col w-[50%] gap-8 phone:w-full'>
                 <div className='flex gap-6 items-center'>
                   <img src={SparkleDark} alt="sparkledark" className='h-[30px] w-auto opacity-70'/>
                   <span className='text-base '>The design is very stiff and plain.</span>
@@ -349,7 +352,7 @@ function BoholTravelGuide() {
                 </div>
               </div>
 
-              <div className='flex flex-col w-[50%] gap-8'>
+              <div className='flex flex-col w-[50%] gap-8 phone:w-full'>
                 <div className='flex gap-6 items-center'>
                   <img src={SparkleDark} alt="sparkledark" className='h-[30px] w-auto opacity-70'/>
                   <span className='text-base '>Too many ads; a little uninviting to visitors of the website. Ads should not distract reading experience.</span>
@@ -369,9 +372,9 @@ function BoholTravelGuide() {
 
           {/* Comments */}
           <div className='flex flex-col gap-16'>
-            <span className='font-secondary font-semibold text-2xl text-[#24303C] w-[40%]'>Suggestions from the  Respondents</span>
-            <div className='flex flex-row gap-12 bg-white py-12 px-12 rounded-xl shadow-xl shadow-gray-200'>
-              <div className='flex flex-col w-[50%] gap-8'>
+            <span className='font-secondary font-semibold text-2xl text-[#24303C] w-[40%] phone:w-full'>Suggestions from the  Respondents</span>
+            <div className='flex flex-row phone:flex-col phone:gap-8 gap-12 bg-white py-12 px-12 rounded-xl shadow-xl shadow-gray-200'>
+              <div className='flex flex-col w-[50%] gap-8 phone:w-full'>
                 <div className='flex gap-6 items-center'>
                   <img src={SparkleLight} alt="SparkleLight" className='h-[30px] w-auto opacity-70'/>
                   <span className='text-base '>Incorporate Bohol culture through designs, colors, and patterns.</span>
@@ -386,7 +389,7 @@ function BoholTravelGuide() {
                 </div>
               </div>
 
-              <div className='flex flex-col w-[50%] gap-8'>
+              <div className='flex flex-col w-[50%] gap-8 phone:w-full'>
                 <div className='flex gap-6 items-center'>
                   <img src={SparkleLight} alt="SparkleLight" className='h-[30px] w-auto opacity-70'/>
                   <span className='text-base '>Simpler layout and design for the homepage.</span>
@@ -412,9 +415,9 @@ function BoholTravelGuide() {
 
           {/* lofi */}
           <div className='flex flex-col gap-12'>
-            <div className='flex flex-row gap-4'>
-              <span className='w-[40%] font-secondary font-semibold text-4xl text-[#24303C]'>Early Ideation</span>
-              <span className='w-[60%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
+            <div className='flex flex-row phone:flex-col gap-4'>
+              <span className='w-[40%] phone:w-full font-secondary font-semibold text-4xl text-[#24303C]'>Early Ideation</span>
+              <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
                 Low-fidelity designs were iterated 4 times to come up with a clean, and well-structured layouts for sections to ensure that I deliver an effective and efficient homepage according to the features and contents planned and revised from the original website.
               </span>
             </div>
@@ -452,9 +455,9 @@ function BoholTravelGuide() {
 
           {/* MID FIDELITY */}
           <div className='flex flex-col gap-12'>
-            <div className='flex flex-row gap-4'>
-              <span className='w-[40%] font-secondary font-semibold text-4xl text-[#24303C]'>Mid-Fidelity Layout</span>
-              <span className='w-[60%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
+            <div className='flex flex-row phone:flex-col gap-4'>
+              <span className='w-[40%] phone:w-full font-secondary font-semibold text-4xl text-[#24303C]'>Mid-Fidelity Layout</span>
+              <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
                 From the fourth and final low-fidelity layout, I constructed a mid-fidelity layout placing the contents and elements such as buttons and icons to its assigned sections, seeing if the layout goes well with the content at hand. This section also contains a detailed explanation of the design decisions I have made.
               </span>
             </div>
@@ -473,9 +476,9 @@ function BoholTravelGuide() {
 
         {/* style guide */}
         <div className='flex flex-col gap-12 py-16'>
-          <div className='flex flex-row gap-4'>
-            <span className='w-[40%] font-secondary font-semibold text-4xl text-[#24303C]'>Style Guide</span>
-            <span className='w-[60%] text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
+          <div className='flex flex-row phone:flex-col gap-4'>
+            <span className='w-[40%] phone:w-full font-secondary font-semibold text-4xl text-[#24303C]'>Style Guide</span>
+            <span className='w-[60%] phone:w-full text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>
               Scanning from the current website, I can clearly see that there is no consistent color palette and typography established in the homepage, and from the research I have done, most of the comments and suggestions was pointing to creating a consistent and clean design, that’s why I created these design kit from scratch, including the logo.
             </span>
           </div>
@@ -488,9 +491,9 @@ function BoholTravelGuide() {
 
         {/* final design */}
         <div className='flex flex-col py-16 gap-16'>
-          <div className='flex flex-row gap-18'>
-            <span className='w-[40%] font-secondary font-semibold text-4xl text-[#24303C]'>Final Designs</span>
-            <div className='w-[60%] flex flex-col gap-4'>
+          <div className='flex flex-row phone:flex-col gap-10'>
+            <span className='w-[40%] phone:w-full font-secondary font-semibold text-4xl text-[#24303C]'>Final Designs</span>
+            <div className='w-[60%] phone:w-full flex flex-col gap-4'>
               <span className='italic font-secondary font-semibold text-2xl text-[#24303C]'>High-fidelity Design</span>
               <span className='text-[#393939] text-lg tracking-[0.03em] phone:text-sm'>Creating the early ideation layout thoroughly and iteratively helps in transitioning to creating a seamless and consistent final design. I constructed this final design with a goal in mind of satisfying the customers as I have heard their honest comments and suggestions about the current website through the survey.</span>
             </div>
@@ -518,8 +521,8 @@ function BoholTravelGuide() {
 
           <div className='flex flex-col gap-12'>
             <span className='font-secondary font-semibold text-2xl text-[#24303C]'>Design Prototype</span>
-            <div className='h-full w-full flex justify-center bg-bg py-12 rounded-xl'>
-              <iframe className="rounded-[20px]" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7gTT0gdYllazWFuDMDESEX%2FBOHOL---Homepage-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D103-1211%26viewport%3D495%252C1024%252C0.34%26t%3DAws6O8EC4S6eUDJr-1%26scaling%3Dscale-down-width%26mode%3Ddesign" allowFullScreen ></iframe>
+            <div className='h-full w-full flex justify-center bg-bg py-12 px-2 rounded-xl'>
+              <iframe className="rounded-[20px]" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7gTT0gdYllazWFuDMDESEX%2FBOHOL---Homepage-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D103-1211%26viewport%3D495%252C1024%252C0.34%26t%3DAws6O8EC4S6eUDJr-1%26scaling%3Dscale-down-width%26mode%3Ddesign%26hide-ui%3D1" allowFullScreen ></iframe>
             </div>
 
           </div>
