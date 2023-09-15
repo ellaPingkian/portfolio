@@ -1,4 +1,4 @@
-// import React from 'react'
+import { useState, useEffect } from 'react'
 import Footer from '../../components/global/Footer'
 import Nomo from './../../assets/images/nomo/nomo-mockup.png'
 import UserPersona from './../../assets/images/nomo/user-persona.png'
@@ -16,12 +16,29 @@ import DessertMenu from './../../assets/images/nomo/dessert.jpg'
 import Dessert from './../../assets/images/nomo/dessert-menu.jpg'
 import Coffee from './../../assets/images/nomo/coffee-menu.jpg'
 import ScrollOnTop from '../../components/global/ScrollOnTop'
-
+import BackToTop from '../../components/global/BackToTop'
 
 function NomoSpaceProject() {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='flex flex-col w-screen bg-[#F4F4F4] h-auto'>
       <ScrollOnTop />
+      <BackToTop scrollPosition={scrollPosition}/>
+
       {/* bg-[#e2d7d7] */}
       <div className="w-screen px-24 h-auto phone:px-5 tablet:px-10 font-secondary">
 

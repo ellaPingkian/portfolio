@@ -1,4 +1,4 @@
-// import React from 'react'
+import { useState, useEffect } from 'react'
 import Footer from '../../components/global/Footer'
 import ScrollOnTop from '../../components/global/ScrollOnTop'
 import BoholLogo from '../../assets/images/bohol/bohol-logo.png'
@@ -20,12 +20,30 @@ import midfidelity from '../../assets/images/bohol/DesignDecisions.png'
 import StyleGuide from '../../assets/images/bohol/styleguide.png'
 import Before from '../../assets/images/bohol/before.png'
 import After from '../../assets/images/bohol/after.png'
+import BackToTop from '../../components/global/BackToTop'
 
 
 function BoholTravelGuide() {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='flex flex-col w-screen bg-[#F4F4F4] h-auto'>
       <ScrollOnTop />
+      <BackToTop scrollPosition={scrollPosition}/>
+
       {/* bg-[#e2d7d7] */}
       <div className="w-screen px-24 h-auto phone:px-5 tablet:px-10 font-secondary">
 
