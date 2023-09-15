@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Footer from '../../components/global/Footer'
 import ScrollOnTop from '../../components/global/ScrollOnTop'
-import BoholLogo from '../../assets/images/bohol/bohol-logo.png'
 import BoholMockup from '../../assets/images/thumbnail/boholtravelguideThumbnail.png'
 import SparkleDark from '../../assets/images/bohol/sparkle-dark.png'
 import SparkleLight from '../../assets/images/bohol/sparkle-light.png'
@@ -61,7 +60,7 @@ function BoholTravelGuide() {
           </div>
 
           <div className='flex items-center justify-end w-[65%] tablet:w-full phone:w-full tablet:justify-center phone:justify-center'>
-            <img src={BoholMockup} alt='nomo thumbnail' className='h-[500px] w-auto tablet:h-[300px] phone:h-[250px]'/>
+            <img src={BoholMockup} alt='nomo thumbnail' className='h-[500px] w-auto tablet:h-[300px] phone:h-[250px] '/>
           </div>
         </div>
 
