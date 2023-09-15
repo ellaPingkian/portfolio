@@ -6,12 +6,13 @@ import AboutMe from './pages/AboutMe';
 import CautionPage from './pages/CautionPage';
 import Navbar from './components/global/Navbar';
 import NomoSpaceProject from './pages/projects/NomoSpaceProject';
+import BoholTravelGuide from './pages/projects/BoholTravelGuide';
 
 function App() {
 
   return (
     <>
-      <div className='flex flex-col overflow-x-hidden overflow-y-auto bg-bg'>
+      <div className='flex flex-col overflow-x-hidden overflow-y-auto  bg-bg'>
         {/* add overflow-x-hidden */}
         <Navbar />
 
@@ -21,7 +22,7 @@ function App() {
           <Route path='/about-me' element={<AboutMe />} />
           <Route path='/page-not-found' element={<CautionPage />} />
           <Route path='/projects/nomo-studio' element={<NomoSpaceProject />} />
-          <Route path='/projects/bohol-website-redesign' element={<CautionPage />} />
+          <Route path='/projects/bohol-website-redesign' element={<BoholTravelGuide />} />
 
         </Routes>
       </div>

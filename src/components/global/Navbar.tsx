@@ -4,7 +4,7 @@ import * as Icons from 'iconsax-react'
 import { Link , useMatch, useResolvedPath } from 'react-router-dom'
 import Logo from '../../assets/images/logo.png'
 import MobileNav from './MobileNav'
-
+import CV from '../../assets/files/CV.pdf'
 
 function Navbar() {
 
@@ -34,6 +34,13 @@ function Navbar() {
 
   const handleMobileNav = () => {
     setMobileNav(true) 
+  }
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.download = 'CV-Ella-Pingkian';
+    link.href = CV;
+    link.click();
   }
 
   return (
@@ -66,9 +73,17 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className='w-[30%] flex items-center justify-end' >
+        {/* <div className='w-[30%] flex items-center justify-end' >
           <Link to='mailto:ellpingkian@gmail.com' className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center'>Get in Touch</Link>
+        </div> */}
+
+        <div className='w-[30%] flex items-center justify-end' >
+          <button onClick={handleDownloadCV} className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center gap-4'>
+            Download CV
+            <Icons.ArrowDown />
+          </button>
         </div>
+
       </div>
 
       
