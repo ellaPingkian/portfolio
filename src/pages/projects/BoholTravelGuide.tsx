@@ -520,8 +520,11 @@ function BoholTravelGuide() {
 
           <div className='flex flex-col gap-12'>
             <span className='font-secondary font-semibold text-2xl text-[#24303C]'>Design Prototype</span>
-            <div className='h-full w-full flex justify-center bg-bg py-12 px-2 rounded-xl'>
-              <iframe className="rounded-[20px]" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7gTT0gdYllazWFuDMDESEX%2FBOHOL---Homepage-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D103-1211%26viewport%3D495%252C1024%252C0.34%26t%3DAws6O8EC4S6eUDJr-1%26scaling%3Dscale-down-width%26mode%3Ddesign%26hide-ui%3D1" allowFullScreen ></iframe>
+            <div className='h-full w-full flex flex-col items-center justify-center bg-bg py-12 px-8 rounded-xl  gap-6'>
+              <span className='text-accent font-secondary tracking-[0.03em] phone:text-sm'>Navigate through this prototype!</span>
+
+              {/* width="800" height="450" */}
+              <iframe className="rounded-[20px] phone:rounded-lg w-[800px] h-[450px] tablet:w-full tablet:h-[350px] phone:w-full phone:h-[180px]" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7gTT0gdYllazWFuDMDESEX%2FBOHOL---Homepage-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D103-1211%26viewport%3D495%252C1024%252C0.34%26t%3DAws6O8EC4S6eUDJr-1%26scaling%3Dscale-down-width%26mode%3Ddesign%26hide-ui%3D1" allowFullScreen ></iframe>
             </div>
 
           </div>
