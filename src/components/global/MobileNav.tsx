@@ -1,6 +1,8 @@
 import * as Icons from 'iconsax-react'
 import React from 'react'
 import { Link , useMatch, useResolvedPath } from 'react-router-dom'
+import CV from '../../assets/files/CV.pdf'
+
 
 function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
   if (!visible) return null;
@@ -26,6 +28,13 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
       name: 'menu-item'
     }
   ]
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.download = 'CV-Ella-Pingkian';
+    link.href = CV;
+    link.click();
+  }
 
   return (
     <div className='fixed z-20 inset-0 bg-bg bg-opacity-40 backdrop-blur-2xl pt-6'>
@@ -56,8 +65,10 @@ function MobileNav({visible, onClose}: { visible: any; onClose: any }) {
           </ul>
 
           <div className='flex items-center md:px-48 sm:px-24' >
-            <Link to='mailto:ellpingkian@gmail.com' className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center'>Get in Touch</Link>
-            
+            <button onClick={handleDownloadCV} className='h-11 w-auto px-6 py-2 font-secondary bg-accent text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center gap-4'>
+              Download CV
+              <Icons.ArrowDown />
+            </button>
           </div>
 
 
