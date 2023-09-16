@@ -45,60 +45,60 @@ function Navbar() {
 
   return (
 
-    // <div className={`sticky ${ direction === "down" ? "-top-[75px]" : "top-0"} w-screen h-[75px] flex flex-row items-center justify-between px-48 bg-accent bg-opacity-20 `}>
-    <div className='h-20 w-screen bg-transparent bg-opacity-20 flex flex-row gap-8 px-48 widescreen:px-48 phone:px-5 tablet:px-10 '>
+    <>
+      <div className='h-20 w-screen bg-gray-100 bg-opacity-0 flex flex-row gap-8 px-24 widescreen:px-24 phone:px-5 tablet:px-10 '>
 
-      <div className='w-[20%] items-center flex'>
-        <img src={Logo} alt='logo' className='h-auto w-[40px] xs:w-full'/>
-      </div>
-
-      <div className='w-[80%] items-center flex phone:hidden tablet:hidden'>
-        <div className='w-[70%] flex items-center justify-end' >
-          <ul className='flex font-secondary tracking-[0.07em] text-sm text-white'>
-            { NavData.map((item, index) => {
-              const resolvedPath = useResolvedPath(item.path)
-              const isActive = useMatch({ path: resolvedPath.pathname, end: true})
-              const [selectedIndex, setSelectedIndex] = React.useState(0);
-
-              return (
-                <li key={index} onClick={() => {setSelectedIndex(selectedIndex)}}
-                className={` ${ isActive && 'text-accent'} px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300`}>
-                    {/* 'px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300'   */}
-                  <Link to={item.path} className='w-full h-full flex items-center'>
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+        <div className='w-[20%] items-center flex'>
+          <img src={Logo} alt='logo' className='h-auto w-[40px] xs:w-full'/>
         </div>
 
-        {/* <div className='w-[30%] flex items-center justify-end' >
-          <Link to='mailto:ellpingkian@gmail.com' className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center'>Get in Touch</Link>
-        </div> */}
+        <div className='w-[80%] items-center flex phone:hidden tablet:hidden'>
+          <div className='w-[70%] flex items-center justify-end' >
+            <ul className='flex font-secondary tracking-[0.07em] text-sm text-white'>
+              { NavData.map((item, index) => {
+                const resolvedPath = useResolvedPath(item.path)
+                const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+                const [selectedIndex, setSelectedIndex] = React.useState(0);
 
-        <div className='w-[30%] flex items-center justify-end' >
-          <button onClick={handleDownloadCV} className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center gap-4'>
-            Download CV
-            <Icons.ArrowDown />
+                return (
+                  <li key={index} onClick={() => {setSelectedIndex(selectedIndex)}}
+                  className={` ${ isActive && 'text-accent'} px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300`}>
+                      {/* 'px-8 mx-2 h-11 hover:text-accent ease-in-out duration-300'   */}
+                    <Link to={item.path} className='w-full h-full flex items-center'>
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+
+
+          <div className='w-[30%] flex items-center justify-end' >
+            <button onClick={handleDownloadCV} className='h-11 w-auto px-6 py-2 font-secondary bg-accent bg-opacity-25 text-white tracking-[.07em] rounded-md hover:bg-accent ease-in-out duration-300 flex items-center gap-4'>
+              Download CV
+              <Icons.ArrowDown />
+            </button>
+          </div>
+
+        </div>
+
+        
+
+        <div className='visible flex w-full items-center justify-end desktop:hidden widescreen:hidden'>
+          <button onClick={handleMobileNav}>
+            <Icons.HambergerMenu className='text-[#C2C2C2] h-8 w-auto'/>
           </button>
+
+          <MobileNav onClose={handleOnClose} visible={showMobileNav} />
+
         </div>
+        
+      </div> 
 
-      </div>
+      {/* <hr className='border-accent border-[1.5px]'/> */}
 
-      
-
-      <div className='visible flex w-full items-center justify-end desktop:hidden widescreen:hidden'>
-        <button onClick={handleMobileNav}>
-          <Icons.HambergerMenu className='text-[#C2C2C2] h-8 w-auto'/>
-        </button>
-
-        <MobileNav onClose={handleOnClose} visible={showMobileNav} />
-
-      </div>
-
-      
-    </div>          
+    </>       
   )
 }
 

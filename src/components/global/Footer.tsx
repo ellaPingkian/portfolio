@@ -56,14 +56,14 @@ function Footer() {
           })}
         </div>
 
-        <Link to='mailto:ellpingkian@gmail.com' className='flex flex-row w-[50%] phone:w-full phone:justify-center items-end gap-8 text-neutral hover:text-accent ease-in-out duration-300'>
+        <Link to='mailto:ellpingkian@gmail.com' className='group flex flex-row w-[50%] phone:w-full phone:justify-center items-end gap-8 text-neutral '>
           <div className='flex flex-col items-end'>
-            <span className=' font-secondary phone:text-xs tracking-[0.07em]'>ellpingkian@gmail.com</span>
+            <span className=' font-secondary phone:text-xs tracking-[0.07em] group-hover:text-accent ease-in-out duration-200'>ellpingkian@gmail.com</span>
             <div className='h-0.5 w-20 rounded-full bg-accent mt-4 hover:w-48'></div>
           </div>
 
           <div className='h-[110px] w-[110px] phone:w-[60px] phone:h-[60px] rounded-full bg-transparent border-2 border-dashed border-gray-200 opacity-80 flex items-center justify-center'>
-            <Icons.ArrowRight className='w-16 h-auto -rotate-45 phone:w-12' />
+            <Icons.ArrowRight className='w-16 h-auto -rotate-45 phone:w-12 group-hover:text-accent group-hover:-translate-y-2 group-hover:translate-x-3 ease-in-out duration-200' />
           </div>
         </Link>
       </div>
