@@ -177,13 +177,13 @@ function BoholTravelGuide() {
               <div className='bg-neutrals-light-100 flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-neutrals-dark-600'>Research Objectives</span>
-                <span className='font-secondary text-base text-[#5E6B78]'>To gather insights and different perspectives about the live and current Bohol Tours website for the redesigning of the website.</span>
+                <span className='font-secondary text-base text-neutrals-mid-400'>To gather insights and different perspectives about the live and current Bohol Tours website for the redesigning of the website.</span>
               </div>
 
               <div className='bg-neutrals-light-100 flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-neutrals-dark-600'>Respondents</span>
-                <ul className='font-secondary text-base text-[#5E6B78] list-disc pl-6'>
+                <ul className='font-secondary text-base text-neutrals-mid-400 list-disc pl-6'>
                   <li>All Genders</li>
                   <li>20 - 35 Years Old</li>
                   <li>Traveler</li>
@@ -193,7 +193,7 @@ function BoholTravelGuide() {
               <div className='bg-neutrals-light-100 flex flex-col w-[30%] phone:w-full h-[330px] px-8 py-12 gap-6 rounded-2xl'>
                 <img src={SparkleLight} alt='sparkle' className='h-[35px] w-[40px]' />
                 <span className='font-secondary font-semibold text-xl text-neutrals-dark-600'>Research Tools and Methods</span>
-                <ul className='font-secondary text-base text-[#5E6B78] list-disc pl-6'>
+                <ul className='font-secondary text-base text-neutrals-mid-400 list-disc pl-6'>
                   <li>Tools (Google Forms, FigJam, Google Sheets for visualization)</li><br/>
                   <li>Methods (System Usability Scale)</li>
                 </ul>
